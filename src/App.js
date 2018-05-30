@@ -12,18 +12,27 @@ class App extends Component {
         <Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>
-              <Link to="/home">We going back home</Link>
+              <Link to="/home">WELCOME TO THE EXTRAVAGANZA</Link>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
             <ButtonToolbar>
-              <Link to="/about-me"><Button bsStyle="primary">About Me</Button></Link>
-              <Link to="/games"><Button bsStyle="primary">Games</Button></Link>
-              <Link to="/projects"><Button bsStyle="primary">Projects</Button></Link>
+              <Link to="/about-me">
+                <Button className="button-margin" bsStyle="primary">About Me</Button>
+              </Link>
+              <Link to="/games">
+                <Button className="button-margin" bsStyle="primary">Games</Button>
+              </Link>
+              <Link to="/projects">
+                <Button className="button-margin" bsStyle="primary">Projects</Button>
+              </Link>
+              <Button>
+                <img className="button-margin" src={ require('./images/menu.png') }/> Menu
+              </Button>
             </ButtonToolbar>
           </Nav>
         </Navbar>
-        <hr />
+        {/*<hr />*/}
       </div>
     );
   }

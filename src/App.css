@@ -3,6 +3,10 @@
   font-size: 20px;
 }
 
-.no-border {
-  border-radius: 0px;
+.button-margin {
+  margin-right: 4px;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to right, rgb(43, 38, 38), rgb(43, 38, 38));
 }
