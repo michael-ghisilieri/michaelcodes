@@ -5,7 +5,7 @@ class Games extends Component {
   render() {
     return (
       <div>
-        <p className="name">Games</p>
+        <p className="segoe-font">Games</p>
       </div>
     );
   }

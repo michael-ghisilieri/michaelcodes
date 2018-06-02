@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <p className="name">michael ghisilieri</p>
+        <p className="segoe-font">michael ghisilieri</p>
       </div>
     );
   }

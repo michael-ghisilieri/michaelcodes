@@ -7,6 +7,20 @@
   margin-right: 4px;
 }
 
+/*
 .navbar-default {
   background-image: linear-gradient(to right, rgb(43, 38, 38), rgb(43, 38, 38));
+}
+*/
+
+.navbar-custom {
+  color: #FFFFFF;
+  background-color: #202020;
+  font-family: Segoe UI, Frutiger, Frutiger Linotype;
+  font-size: 20px !important;
+}
+
+.button-custom {
+  font-family: Segoe UI, Frutiger, Frutiger Linotype;
+  font-size: 14px !important;
 }

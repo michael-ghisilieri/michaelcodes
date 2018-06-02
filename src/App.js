@@ -9,24 +9,24 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar fluid>
+        <Navbar className="navbar-custom" fluid>
           <Navbar.Header>
-            <Navbar.Brand>
+            <Navbar.Brand className="navbar-custom"> 
               <Link to="/home">WELCOME TO THE EXTRAVAGANZA</Link>
             </Navbar.Brand>
           </Navbar.Header>
           <Nav>
             <ButtonToolbar>
               <Link to="/about-me">
-                <Button className="button-margin" bsStyle="primary">About Me</Button>
+                <Button className="button-margin btn btn-light button-custom">About Me</Button>
               </Link>
               <Link to="/games">
-                <Button className="button-margin" bsStyle="primary">Games</Button>
+                <Button className="button-margin btn btn-light button-custom">Games</Button>
               </Link>
               <Link to="/projects">
-                <Button className="button-margin" bsStyle="primary">Projects</Button>
+                <Button className="button-margin btn btn-light button-custom">Projects</Button>
               </Link>
-              <Button>
+              <Button className="btn btn-light button-custom">
                 <img className="button-margin" src={ require('./images/menu.png') }/> Menu
               </Button>
             </ButtonToolbar>

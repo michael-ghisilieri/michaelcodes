@@ -5,7 +5,7 @@ class AboutMe extends Component {
   render() {
     return (
       <div>
-        <p className="name">About Me</p>
+        <p className="segoe-font">About Me</p>
       </div>
     );
   }
