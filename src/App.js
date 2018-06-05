@@ -18,16 +18,16 @@ class App extends Component {
           <Nav>
             <ButtonToolbar>
               <Link to="/about-me">
-                <Button className="button-margin btn btn-light button-custom">About Me</Button>
+                <Button className="button-margin btn btn-light btn-custom">About Me</Button>
               </Link>
               <Link to="/games">
-                <Button className="button-margin btn btn-light button-custom">Games</Button>
+                <Button className="button-margin btn btn-light btn-custom">Games</Button>
               </Link>
               <Link to="/projects">
-                <Button className="button-margin btn btn-light button-custom">Projects</Button>
+                <Button className="button-margin btn btn-light btn-custom">Projects</Button>
               </Link>
-              <Button className="btn btn-light button-custom">
-                <img className="button-margin" src={ require('./images/menu.png') }/> Menu
+              <Button className="btn btn-light btn-custom">
+                <img className="button-margin" src={ require('./images/menu.png') } alt="menu"/> Menu
               </Button>
             </ButtonToolbar>
           </Nav>

@@ -3,3 +3,21 @@
   text-align: center;
   font-size: 28px;
 }
+
+.header {
+  height: 50%;
+  overflow: hidden;
+}
+
+.header img {
+  width: 100%;
+  margin-bottom: -650px;
+  opacity: 0.5;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
