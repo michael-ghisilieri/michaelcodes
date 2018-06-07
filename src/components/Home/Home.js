@@ -5,9 +5,10 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div className="header">
+        <div className="banner">
           <img src={ require('../../images/header-background.jpg') } alt="header background"/>
-          <div className="segoe-font centered">michael ghisilieri</div>
+          <div className="segoe-font top-text">Hi! I'm Michael Ghisilieri</div>
+          <div className="segoe-font bottom-text"><i>Software Engineer & Web Developer</i></div>
         </div>
       </div>
     );

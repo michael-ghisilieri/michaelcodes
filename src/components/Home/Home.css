@@ -1,23 +1,38 @@
 .segoe-font {
   font-family: Segoe UI, Frutiger, Frutiger Linotype;
-  text-align: center;
-  font-size: 28px;
 }
 
-.header {
+.banner {
+  position: relative;
   height: 50%;
   overflow: hidden;
 }
 
-.header img {
+.banner img {
   width: 100%;
   margin-bottom: -650px;
   opacity: 0.5;
 }
 
-.centered {
+.top-text {
+  font-size: 64px !important;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.bottom-text {
+  font-size: 24px !important;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-bar {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: px solid #202020;
 }
