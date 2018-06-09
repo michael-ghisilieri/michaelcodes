@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel');
-@import url('https://fonts.googleapis.com/css?family=Coming+Soon');
+
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon|News+Cycle');
 
 body {
   background-color: #F5F5F5;
@@ -18,8 +18,7 @@ header {
 .header-img {
   width: 100%;
   opacity: 0.75;
-  position: absolute;
-  top: 0;
+  margin-top: -86px;
   border-bottom: 4px solid gray;
 }
 
@@ -75,12 +74,29 @@ navi li {
   width: 0%;
   background-color: white;
   position: absolute;
-  margin-top: ;
   transition: all ease-in-out 250ms;
 }
 
 .custom-links:hover::after {
   width: 100%;
+}
+
+about {
+  text-align: center;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
+}
+
+about h2 {
+  padding-top: 100px;
+}
+
+.line-bar {
+  background: #505050;
+  width:10%;
+  height: 5px;
+  margin-left: 45%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /*

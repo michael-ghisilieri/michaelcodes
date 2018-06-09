@@ -30,10 +30,16 @@ class App extends Component {
           </div>
         </header>
 
-        <img className="header-img" src={ require('./images/orangejustice_crop.png') } alt="orange justice"/>
+      <img className="header-img" src={ require('./images/orangejustice_crop.png') } alt="orange justice"/>
 
-      <h2><p>heeeeeeelp</p></h2>
+      <about>
+        <h2>About Me</h2>
+        <div className="line-bar"></div>
 
+        <div>
+          <p style={{'font-size': '20px'}}>Computer Engineer graduate who has found a new love for web development and design. Hop along for the ride.</p>
+        </div>
+      </about>
       </body>
 
     );
