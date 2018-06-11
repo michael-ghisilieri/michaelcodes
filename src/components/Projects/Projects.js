@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import './Projects.css';
+import React, { Component } from 'react'
+import './Projects.css'
 
 class Projects extends Component {
-  render() {
+  render () {
     return (
       <div>
-        <p className="segoe-font">Projects</p>
+        <p className='segoe-font'>Projects</p>
       </div>
-    );
+    )
   }
 }
 
-export default Projects;
+export default Projects
