@@ -1,0 +1,68 @@
+header {
+  background-color: rgba(34, 38, 41, 0.9);
+  font-family: 'Coming Soon', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.name {
+  color: #FFF;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 80% !important;
+  margin: 0 auto;
+}
+
+navi {
+  float: right;
+}
+
+navi ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+navi li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.custom-links {
+  color: #FFF;
+  text-decoration: none !important;
+  font-size: 24px;
+}
+
+.custom-links:hover {
+  color: #FFF;
+}
+
+.custom-links::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+.custom-links:hover::after {
+  width: 100%;
+}

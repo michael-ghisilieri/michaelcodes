@@ -1,0 +1,29 @@
+panels {
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+panels::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container2 {
+  max-width: 80% !important;
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.panel-img {
+  
+  width: 45%;
+}
+
+.panel-txt {
+
+  width: 35%;
+  padding-top: 35px;
+}

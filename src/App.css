@@ -2,83 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|News+Cycle');
 
 body {
-  background-color: #F5F5F5;
-}
-
-header {
-  background-color: rgba(34, 38, 41, 0.9);
-  font-family: 'Coming Soon', serif, Segoe UI, Frutiger, Frutiger Linotype;
-  font-weight: 500;
-  position: relative;
-  z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-color: #F5F5F5 !important;
 }
 
 .header-img {
   width: 100%;
   opacity: 0.75;
   margin-top: -86px;
-  border-bottom: 4px solid gray;
-}
-
-.name {
-  color: #FFF;
-  float: left;
-  padding-top: 15px;
-  padding-bottom: 10px;
-}
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.container {
-  max-width: 80% !important;
-  margin: 0 auto;
-}
-
-navi {
-  float: right;
-}
-
-navi ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-navi li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 15px;
-  position: relative;
-}
-
-.custom-links {
-  color: #FFF;
-  text-decoration: none !important;
-  font-size: 24px;
-}
-
-.custom-links:hover {
-  color: #FFF;
-}
-
-.custom-links::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0%;
-  background-color: white;
-  position: absolute;
-  transition: all ease-in-out 250ms;
-}
-
-.custom-links:hover::after {
-  width: 100%;
+  border-bottom: 3px solid gray;
+  margin-bottom: 50px;
 }
 
 about {
@@ -87,7 +19,11 @@ about {
 }
 
 about h2 {
-  padding-top: 100px;
+  padding-top: 50px;
+}
+
+about p {
+  font-size: 20px;
 }
 
 .line-bar {
@@ -98,25 +34,3 @@ about h2 {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
-/*
-.button-margin {
-  margin-right: 4px;
-}
-
-.navbar-default {
-  background-image: linear-gradient(to right, rgb(43, 38, 38), rgb(43, 38, 38));
-}
-
-.navbar-custom {
-  color: #FFFFFF;
-  background-color: #202020;
-  font-family: Segoe UI, Frutiger, Frutiger Linotype;
-  font-size: 20px !important;
-}
-
-.btn-custom {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype;
-  font-size: 14px !important;
-}
-*/
