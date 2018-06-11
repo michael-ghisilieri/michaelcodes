@@ -5,42 +5,53 @@ import { Link } from 'react-router-dom'
 import './App.css'
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <body>
         <header>
-          <div className='container'>
-
-            <h3 className='name'>michael ghisilieri</h3>
+          <div className="container">
+            <h3 className="name">michael ghisilieri</h3>
 
             <navi>
               <ul>
                 <li>
-                  <Link to='/about-me' className='custom-links'>about me</Link>
+                  <Link to="/about-me" className="custom-links">
+                    about me
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/games' className='custom-links'>games</Link>
+                  <Link to="/games" className="custom-links">
+                    games
+                  </Link>
                 </li>
                 <li>
-                  <Link to='/projects' className='custom-links'>projects</Link>
+                  <Link to="/projects" className="custom-links">
+                    projects
+                  </Link>
                 </li>
               </ul>
             </navi>
           </div>
         </header>
 
-        <img className='header-img' src={require('./images/orangejustice_crop.png')} alt='orange justice' />
+        <img
+          className="header-img"
+          src={require('./images/orangejustice_crop.png')}
+          alt="orange justice"
+        />
 
         <about>
           <h2>About Me</h2>
-          <div className='line-bar' />
+          <div className="line-bar" />
 
           <div>
-            <p style={{'font-size': '20px'}}>Computer Engineer graduate who has found a new love for web development and design. Hop along for the ride.</p>
+            <p style={{ 'font-size': '20px' }}>
+              Computer Engineer graduate who has found a new love for web
+              development and design. Hop along for the ride.
+            </p>
           </div>
         </about>
       </body>
-
     )
   }
 }

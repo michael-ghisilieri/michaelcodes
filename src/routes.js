@@ -11,11 +11,11 @@ const createRoutes = () => {
   return (
     <Router history={history}>
       <div>
-        <Route path='/' component={App} />
-        <Route path='/home' component={Home} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/games' component={Games} />
-        <Route path='/about-me' component={AboutMe} />
+        <Route path="/" component={App} />
+        <Route path="/home" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/games" component={Games} />
+        <Route path="/about-me" component={AboutMe} />
       </div>
     </Router>
   )

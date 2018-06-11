@@ -4,7 +4,4 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const routes = createRoutes()
 
-ReactDOM.render(
-  routes,
-  document.getElementById('root')
-)
+ReactDOM.render(routes, document.getElementById('root'))
