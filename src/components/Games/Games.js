@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './Games.css';
+import React, { Component } from 'react'
+import './Games.css'
 
 class Games extends Component {
   render() {
@@ -7,8 +7,8 @@ class Games extends Component {
       <div>
         <p className="segoe-font">Games</p>
       </div>
-    );
+    )
   }
 }
 
-export default Games;
+export default Games
