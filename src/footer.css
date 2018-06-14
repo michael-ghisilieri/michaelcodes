@@ -1,0 +1,37 @@
+footer {
+  width: 100%;
+  background-color: rgba(34, 38, 41, 0.9);
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  font-weight: 500;
+}
+
+.container3 {
+  color: #FFF;
+  max-width: 80% !important;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 25px 0px;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.name-footer {
+  float: left;
+}
+
+footer nav {
+  float: right;
+}
+
+footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer nav li {
+  display: inline-block;
+  padding-left: 15px;
+  position: relative;
+}
+
