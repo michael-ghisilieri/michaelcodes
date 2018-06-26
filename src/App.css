@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|News+Cycle');
 
 body {
-  background-color: #F5F5F5 !important;
+  background-color: #F5F5F5;
 }
 
 .header-img {
@@ -33,4 +33,18 @@ about p {
   margin-left: 45%;
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+.card-box {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.panel-box {
+  display: ;
+  flex-wrap: ;
+  align-self: ;
+  max-width: 80%;
+  margin: 75px auto;
 }
