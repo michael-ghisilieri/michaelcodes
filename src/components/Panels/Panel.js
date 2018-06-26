@@ -6,6 +6,8 @@ class Panel extends Component {
     super(props)
     this.state = {
       image: '',
+      title: '',
+      text: '',
       imgPos: '',
       txtPos: '',
     }
@@ -13,25 +15,19 @@ class Panel extends Component {
 
   render() {
     return (
-      <panels>
-        <div className="container2">
-          <img
-            style={{ float: this.props.imgPos }}
-            className="panel-img"
-            src={this.props.image}
-            alt="igloo"
-          />
-          <p style={{ float: this.props.txtPos }} className="panel-txt">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+      <div className="panel-container">
+        <img
+          style={{ float: this.props.imgPos,
+            order: this.props.imgPos === 'right'? '3': '1' }}
+          className="panel-img"
+          src={this.props.image}
+          alt="igloo"
+        />
+        <div style={{ float: this.props.txtPos }} className="panel-txt">
+          <strong style={{ 'font-size': '30px'}} >{this.props.title}</strong>
+          <p style={{ 'padding-top': this.props.title !== ''? '20px': '0px'}}> {this.props.text} </p>
         </div>
-      </panels>
+      </div>
     )
   }
 }

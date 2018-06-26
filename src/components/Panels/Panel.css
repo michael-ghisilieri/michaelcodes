@@ -1,29 +1,47 @@
-panels {
+.panel-container {
+  display: flex;
+  align-items: center;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  font-size: 20px;
+  margin: 50px 0px;
 }
 
-panels::after {
+.panel-container::after {
   content: '';
   display: table;
   clear: both;
 }
 
-.container2 {
-  max-width: 80% !important;
-  margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
 .panel-img {
-  
-  width: 45%;
+  width: 50%;
+  order: 1;
 }
 
 .panel-txt {
+  width: 50%;
+  order: 2;
+  padding: 40px 2.5%;
+  line-height: 200%;
+}
 
-  width: 35%;
-  padding-top: 35px;
+@media (max-width: 1200px) {
+  .panel-container {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .panel-img {
+    width: 100%;
+    padding: 0px;
+    margin: 15px 0px;
+    order: 1 !important;
+  }
+  
+  .panel-txt {
+    width: 80%;
+    padding: 0px;
+    margin: 15px 0px;
+    line-height: 150%;
+    order: 2;
+  }
 }

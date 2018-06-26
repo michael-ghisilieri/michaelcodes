@@ -10,9 +10,9 @@ class Home extends Component {
             src={require('../../images/header-background.jpg')}
             alt="header background"
           />
-          <div className="segoe-font top-text">Hi! I&amp;m Michael Ghisilieri</div>
+          <div className="segoe-font top-text">Hi! I'm Michael Ghisilieri</div>
           <div className="segoe-font bottom-text">
-            <i>Software Engineer & Web Developer</i>
+            <i>Software Engineer &amp; Web Developer</i>
           </div>
         </div>
       </div>
