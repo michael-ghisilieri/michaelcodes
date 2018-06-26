@@ -9,22 +9,39 @@ class Footer extends Component {
     return (
       <footer>
         <div className="container3">
-          <h4 className="name-footer">f o o t e r</h4>
+          <div className="footer-name">
+            &copy; 2018 Michael Ghisilieri
+          </div>
 
           <nav>
             <ul>
               <li>
-                <Link target="_blank" to="https://github.com/michael-ghisilieri">
-                  <img src={github} alt="github logo" />
+                <Link to="/about-me" className="footer-links">
+                  about me
                 </Link>
               </li>
               <li>
-                <Link target="_blank" to="https://www.linkedin.com/in/michael-ghisilieri/">
-                  <img src={linkedin} alt="linkedin logo" />
+                <Link to="/personal" className="footer-links">
+                  personal
+                </Link>
+              </li>
+              <li>
+                <Link to="/professional" className="footer-links">
+                  professional
                 </Link>
               </li>
             </ul>
           </nav>
+
+          <div className="footer-icons">
+            <Link style={{'padding-right': '20px'}} target="_blank" to="https://github.com/michael-ghisilieri">
+              <img src={github} alt="github logo" />
+            </Link>
+
+            <Link target="_blank" to="https://www.linkedin.com/in/michael-ghisilieri/">
+              <img src={linkedin} alt="linkedin logo" />
+            </Link>
+          </div>
         </div>
       </footer>
     )

@@ -1,5 +1,7 @@
 header {
-  background-color: rgba(34, 38, 41, 0.9);
+  width: 100%;
+  /* original dark grey rgb(34, 38, 41) */
+  background-color: rgba(0, 0, 0, 1);
   font-family: 'Coming Soon', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-weight: 500;
   position: relative;
@@ -11,8 +13,13 @@ header {
 .name {
   color: #FFF;
   float: left;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  text-decoration: none !important;
+}
+
+.name:hover {
+  color: #D0D0D0;
 }
 
 header::after {
@@ -26,34 +33,34 @@ header::after {
   margin: 0 auto;
 }
 
-navi {
+header navi {
   float: right;
 }
 
-navi ul {
+header navi ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-navi li {
+header navi li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 15px;
+  padding-top: 10px;
   position: relative;
 }
 
-.custom-links {
+.header-links {
   color: #FFF;
   text-decoration: none !important;
   font-size: 24px;
 }
 
-.custom-links:hover {
+.header-links:hover {
   color: #FFF;
 }
 
-.custom-links::after {
+.header-links::after {
   content: '';
   display: block;
   height: 2px;
@@ -63,6 +70,6 @@ navi li {
   transition: all ease-in-out 250ms;
 }
 
-.custom-links:hover::after {
+.header-links:hover::after {
   width: 100%;
 }

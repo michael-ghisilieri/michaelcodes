@@ -7,23 +7,27 @@ class Header extends Component {
     return (
       <header>
         <div className="container">
-          <h3 className="name">michael ghisilieri</h3>
+          <h3>
+            <Link to="/" className="name">
+              michael ghisilieri
+            </Link>
+          </h3>
 
           <navi>
             <ul>
               <li>
-                <Link to="/about-me" className="custom-links">
+                <Link to="/about-me" className="header-links">
                   about me
                 </Link>
               </li>
               <li>
-                <Link to="/games" className="custom-links">
-                  games
+                <Link to="/personal" className="header-links">
+                  personal
                 </Link>
               </li>
               <li>
-                <Link to="/projects" className="custom-links">
-                  projects
+                <Link to="/professional" className="header-links">
+                  professional
                 </Link>
               </li>
             </ul>
