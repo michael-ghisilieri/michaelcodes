@@ -1,4 +1,4 @@
-footer {
+.footer {
   width: 100%;
   /* original dark grey rgb(34, 38, 41) */
   background-color: rgba(0, 0, 0, 1);
@@ -6,7 +6,9 @@ footer {
   font-weight: 500;
 }
 
-.container3 {
+.footer > div {
+  display: flex;
+  flex-wrap: wrap;
   color: #FFF;
   max-width: 80% !important;
   margin: 0 auto;
@@ -23,19 +25,19 @@ footer {
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
 }
 
-footer nav {
+.footer nav {
   float: left;
   width: 50%;
   text-align: center;
 }
 
-footer nav ul {
+.footer nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-footer nav li {
+.footer nav li {
   display: inline-block;
   padding: 0px 40px;
   position: relative;
@@ -55,4 +57,38 @@ footer nav li {
   float: left;
   width: 25%;
   text-align: right;
+}
+
+@media (max-width: 640px) {
+  .footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .footer-name {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer nav {
+    float: left;
+    width: 100%;
+  }
+
+  .footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer nav li {
+    padding: 10px 0px 25px 25px;
+  }
+
+  .footer-icons {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
 }

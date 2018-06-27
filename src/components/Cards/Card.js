@@ -15,13 +15,15 @@ class Card extends Component {
     return (
       <div className="card-item">
 
-        <img src={this.props.image} alt="test" />
+        <div>
+          <img src={this.props.image} alt="test" />
+        </div>
 
         <strong>
           <p><br />{this.props.title}</p>
         </strong>
 
-        <p>{this.props.content}</p>
+        <p style={{'text-align': 'left'}}>{this.props.content}</p>
 
       </div>
     )

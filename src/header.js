@@ -13,7 +13,7 @@ class Header extends Component {
             </Link>
           </h3>
 
-          <navi>
+          <nav>
             <ul>
               <li>
                 <Link to="/about-me" className="header-links">
@@ -31,7 +31,7 @@ class Header extends Component {
                 </Link>
               </li>
             </ul>
-          </navi>
+          </nav>
         </div>
       </header>
     )

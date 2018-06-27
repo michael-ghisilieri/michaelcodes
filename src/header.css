@@ -6,15 +6,21 @@ header {
   font-weight: 500;
   position: relative;
   z-index: 1;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px 0px;
+  margin: -25px 0px;
+}
+
+header h3 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3px;
 }
 
 .name {
   color: #FFF;
   float: left;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 10px;
   text-decoration: none !important;
 }
 
@@ -33,17 +39,17 @@ header::after {
   margin: 0 auto;
 }
 
-header navi {
+header nav {
   float: right;
 }
 
-header navi ul {
+header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-header navi li {
+header nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 10px;
@@ -72,4 +78,34 @@ header navi li {
 
 .header-links:hover::after {
   width: 100%;
+}
+
+@media (max-width: 640px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: ;
+    align-items: ;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav {
+    float: left;
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header nav li {
+    margin: 0px;
+    padding: 0px 30px;
+  }
 }

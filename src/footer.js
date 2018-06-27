@@ -7,8 +7,8 @@ import linkedin from './images/linkedin34px.png'
 class Footer extends Component {
   render() {
     return (
-      <footer>
-        <div className="container3">
+      <div className="footer">
+        <div>
           <div className="footer-name">
             &copy; 2018 Michael Ghisilieri
           </div>
@@ -43,7 +43,7 @@ class Footer extends Component {
             </Link>
           </div>
         </div>
-      </footer>
+      </div>
     )
   }
 }

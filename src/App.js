@@ -11,7 +11,7 @@ import webpage from './images/webpage.png'
 import tools from './images/tools.png'
 import recordplayer from './images/recordplayer.png'
 import computer from './images/computer-desk.jpg'
-import glass from './images/magnify-blur.jpg'
+//import glass from './images/magnify-blur.jpg'
 import guitar from './images/guitar-catcher.jpg'
 import './App.css'
 
@@ -23,7 +23,7 @@ class App extends Component {
 
         <img className="header-img" src={codephoto} alt="orange justice" />
 
-        <about>
+        <div className="about">
           <h2>About Me</h2>
           <div className="line-bar" />
 
@@ -33,7 +33,7 @@ class App extends Component {
               development and design. Hop along for the ride.
             </p>
           </div>
-        </about>
+        </div>
 
         <div className="card-box">
           <Card image={webpage} title="Web Development" content="Found a new love for web development and making the internet look a little more exciting." />

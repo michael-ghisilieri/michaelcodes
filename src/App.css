@@ -3,6 +3,7 @@
 
 body {
   background-color: #F5F5F5;
+  margin: 0;
 }
 
 .header-img {
@@ -13,16 +14,18 @@ body {
   margin-bottom: 50px;
 }
 
-about {
+.about {
   text-align: center;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
 }
 
-about h2 {
-  padding-top: 50px;
+.about h2 {
+  padding-top: 25px;
 }
 
-about p {
+.about p {
+  max-width: 90%;
+  margin: 40px auto;
   font-size: 20px;
 }
 
@@ -37,14 +40,38 @@ about p {
 
 .card-box {
   display: flex;
-  max-width: 80%;
+  flex-wrap: wrap;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 .panel-box {
-  display: ;
-  flex-wrap: ;
-  align-self: ;
   max-width: 80%;
-  margin: 75px auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) { 
+  .about h2 {
+    padding: 0px;
+  }
+  
+  .about p {
+    max-width: 90%;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+
+  .line-bar {
+    background: #505050;
+    width:25%;
+    height: 5px;
+    margin-left: 37.5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .header-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }

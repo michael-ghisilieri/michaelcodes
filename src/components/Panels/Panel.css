@@ -1,6 +1,6 @@
 .panel-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-size: 20px;
   margin: 50px 0px;
@@ -15,6 +15,7 @@
 .panel-img {
   width: 50%;
   order: 1;
+  box-shadow: 10px -10px 30px -5px;
 }
 
 .panel-txt {
@@ -24,9 +25,10 @@
   line-height: 200%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 640px) {
   .panel-container {
     flex-direction: column;
+    align-items: center;
     margin: 0px;
   }
 
@@ -38,10 +40,10 @@
   }
   
   .panel-txt {
-    width: 80%;
+    width: 90%;
     padding: 0px;
     margin: 15px 0px;
-    line-height: 150%;
+    line-height: 125%;
     order: 2;
   }
 }
