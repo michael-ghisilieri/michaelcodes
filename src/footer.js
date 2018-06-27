@@ -21,13 +21,18 @@ class Footer extends Component {
                 </Link>
               </li>
               <li>
+                <Link to="/professional" className="footer-links">
+                  professional
+                </Link>
+              </li>
+              <li>
                 <Link to="/personal" className="footer-links">
                   personal
                 </Link>
               </li>
               <li>
-                <Link to="/professional" className="footer-links">
-                  professional
+                <Link to="/contact" className="footer-links">
+                  contact
                 </Link>
               </li>
             </ul>

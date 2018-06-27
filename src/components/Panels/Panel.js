@@ -13,6 +13,10 @@ class Panel extends Component {
     }
   }
 
+  buildSublink() {
+
+  }
+
   render() {
     return (
       <div className="panel-container">
@@ -24,8 +28,8 @@ class Panel extends Component {
           alt="igloo"
         />
         <div style={{ float: this.props.txtPos }} className="panel-txt">
-          <strong style={{ 'font-size': '30px'}} >{this.props.title}</strong>
-          <p style={{ 'padding-top': this.props.title !== ''? '20px': '0px'}}> {this.props.text} </p>
+          <strong > {this.props.title} </strong>
+          <p dangerouslySetInnerHTML={{__html: this.props.text}} style={{ 'padding-top': this.props.title !== ''? '20px': '0px'}} />
         </div>
       </div>
     )

@@ -44,11 +44,11 @@ class App extends Component {
         <div className="panel-box">
           <Panel
             image={computer} title="Michael Ghisilieri" imgPos="left" txtPos="right"
-            text="Basically living on my computer, I spend my time focusing on becoming a web designer and developer nowadays. There's just something intriguing about learning with tools like ReactJS that combines programming with the creativity to have complete control of an entire website. To find out more about the work that I have done in the past and am currently working towards, check out PROFESSIONAL."
+            text="Basically living on my computer, I spend my time focusing on becoming a web designer and developer nowadays. There's just something intriguing about learning with tools like ReactJS that combines programming with the creativity to have complete control of an entire website. To find out more about the work that I have done in the past and am currently working towards, check out <a href='/professional'>professional</a>."
           />
           <Panel 
-            image={guitar} imgPos="right" txtPos="left"
-            text="When I'm not building, designing, and learning stuff on my computer, I like to expand my music library. Being a video game collector also keeps me occupied every now and then. To give everyone a more personal look into my life, I'll update things such as what I'm currently listening to for the week and maybe game pickups over on PERSONAL. Who knows, maybe some guitar covers will start popping up along the way too."  
+            image={guitar} title='' imgPos="right" txtPos="left"
+            text="When I'm not building, designing, and learning stuff on my computer, I like to expand my music library. Being a video game collector also keeps me occupied every now and then. To give everyone a more personal look into my life, I'll update things such as what I'm currently listening to for the week and maybe game pickups over on <a href='/personal'>personal</a>. Who knows, maybe some guitar covers will start popping up along the way too."  
           />
         </div>
 

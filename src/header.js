@@ -21,13 +21,18 @@ class Header extends Component {
                 </Link>
               </li>
               <li>
+                <Link to="/professional" className="header-links">
+                  professional
+                </Link>
+              </li>
+              <li>
                 <Link to="/personal" className="header-links">
                   personal
                 </Link>
               </li>
               <li>
-                <Link to="/professional" className="header-links">
-                  professional
+                <Link to="/contact" className="header-links">
+                  contact
                 </Link>
               </li>
             </ul>
