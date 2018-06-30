@@ -4,7 +4,8 @@
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   float: left;
   margin: 0 auto;
-  padding: 75px 0px;
+  padding: 50px 0px 40px 0px;
+  font-size: 16px;
 }
 
 .card-item > div {
@@ -15,6 +16,13 @@
   width: 64px;
 }
 
+@media (max-width: 960px) {
+  .card-item {
+    width: 40%;
+    padding: 20px 20px;
+  }
+}
+
 @media (max-width: 640px) {
   .card-item {
     width: 45%;
@@ -22,6 +30,10 @@
   }
 
   .card-item > div {
+    text-align: center;
+  }
+
+  .card-item > strong {
     text-align: center;
   }
 }

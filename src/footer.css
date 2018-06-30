@@ -4,6 +4,7 @@
   background-color: rgba(0, 0, 0, 1);
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-weight: 500;
+  margin-top: 100px;
 }
 
 .footer > div {
@@ -96,6 +97,10 @@
 }
 
 @media (max-width: 640px) {
+  .footer {
+    margin-top: 50px;
+  }
+
   .footer > div {
     display: flex;
     flex-wrap: wrap;

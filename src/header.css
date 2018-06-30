@@ -2,16 +2,15 @@ header {
   width: 100%;
   /* original dark grey rgb(34, 38, 41) */
   background-color: rgba(0, 0, 0, 1);
-  font-family: 'Coming Soon', serif, Segoe UI, Frutiger, Frutiger Linotype;
-  font-weight: 500;
+  font-family: 'Share', serif, Segoe UI, Frutiger, Frutiger Linotype;
   position: relative;
   z-index: 1;
   padding: 20px 0px;
-  margin: -25px 0px;
+  margin: -35px 0px;
 }
 
 header h3 {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 300;
   letter-spacing: 3px;
 }
@@ -21,7 +20,7 @@ header h3 {
   float: left;
   padding-top: 0px;
   padding-bottom: 10px;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .name:hover {
@@ -35,7 +34,7 @@ header::after {
 }
 
 .container {
-  max-width: 80% !important;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -58,7 +57,7 @@ header nav li {
 
 .header-links {
   color: #FFF;
-  text-decoration: none !important;
+  text-decoration: none;
   font-size: 24px;
 }
 
@@ -80,13 +79,46 @@ header nav li {
   width: 100%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1250px) {
   header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-self: ;
-    align-items: ;
+  }
+
+  .name {
+    width: 100%;
+    text-align: left;
+  }
+
+  header nav {
+    float: left;
+    width: 100%;
+  }
+
+  header nav ul {
+    display: flex;
+    text-align: left;
+
+  }
+
+  header nav li {
+    margin-left: 0px;
+    margin-right: 70px;
+  }
+}
+
+/* was 640px before but no difference between that and 900px */
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .name {
@@ -106,6 +138,6 @@ header nav li {
 
   header nav li {
     margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 0px;
   }
 }
