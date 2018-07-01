@@ -1,0 +1,21 @@
+.error-container {
+  font-family: 'Share', serif, Segoe UI, Frutiger, Frutiger Linotype;
+}
+
+.error-container h1 {
+  background: linear-gradient(to top right, black, #D0D0D0); 
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-size: 400px;
+  text-align: center;
+  margin: 0;
+}
+
+.error-container p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.error-container p > a {
+  color: #808080;
+}
