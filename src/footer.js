@@ -10,9 +10,10 @@ class Footer extends Component {
       <div className="footer">
         <div>
           <div className="footer-name">
-            &copy; 2018 Michael Ghisilieri
+            <p>&copy; 2018 Michael Ghisilieri</p>
+            <p className="footer-credit">All icons on this page are credited to <a target="_blank" href="http://linea.io/">linea.io</a></p>
           </div>
-
+        
           <nav>
             <ul>
               <li>
