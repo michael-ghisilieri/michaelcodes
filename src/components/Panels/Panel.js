@@ -29,7 +29,7 @@ class Panel extends Component {
         />
         <div style={{ float: this.props.txtPos }} className="panel-txt">
           <strong > {this.props.title} </strong>
-          <p dangerouslySetInnerHTML={{__html: this.props.text}} style={{ 'padding-top': this.props.title !== ''? '20px': '0px'}} />
+          <p dangerouslySetInnerHTML={{__html: this.props.text}} style={{ paddingTop: this.props.title !== ''? '20px': '0px'}} />
         </div>
       </div>
     )
