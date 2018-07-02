@@ -4,86 +4,15 @@
 body {
   background-color: #F5F5F5;
   margin: 0;
+  padding: 0;
+  height: 100%;
   min-width: 640px;
 }
-
-.header-img {
-  display: block;
-  width: 100%;
-  min-height: 250px;
-  opacity: 0.75;
-  margin-top: -86px;
-  border-bottom: 3px solid gray;
-  margin-bottom: 50px;
+.page-container {
+  min-height: 100vh;
+  position: relative;
 }
 
-.about {
-  text-align: center;
-  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
-}
-
-.about h2 {
-  padding-top: 25px;
-}
-
-.about p {
-  max-width: 80%;
-  margin: 40px auto;
-  font-size: 20px;
-}
-
-.line-bar {
-  background: #505050;
-  width: 10%;
-  height: 5px;
-  margin-left: 45%;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.card-box {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.panel-box {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
-/* --- may or may not use this extra reset on the bar ---
-@media (max-width: 1300px) { 
-  .line-bar {
-    width: 13%;
-    margin-left: 43.5%;
-  }
-}
-*/
-
-@media (max-width: 640px) { 
-  .about h2 {
-    padding: 0px;
-  }
-  
-  .about p {
-    max-width: 90%;
-    margin: 30px auto;
-    font-size: 20px;
-  }
-
-  .line-bar {
-    background: #505050;
-    width:25%;
-    height: 5px;
-    margin-left: 37.5%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  .header-img {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+.body-container {
+  padding-bottom: 260px;
 }

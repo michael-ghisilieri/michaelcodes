@@ -1,38 +1,90 @@
-.segoe-font {
-  font-family: Segoe UI, Frutiger, Frutiger Linotype;
-}
-
-.banner {
-  position: relative;
-  height: 50%;
-  overflow: hidden;
-}
-
-.banner img {
+.header-img {
+  display: block;
   width: 100%;
-  margin-bottom: -650px;
-  opacity: 0.5;
+  min-height: 250px;
+  opacity: 0.9;
+  margin-top: 0px;
+  border-bottom: 5px solid gray;
+  margin-bottom: 50px;
 }
 
-.top-text {
-  font-size: 64px !important;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about {
+  text-align: center;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
 }
 
-.bottom-text {
-  font-size: 24px !important;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.about h2 {
+  padding-top: 25px;
 }
 
-.nav-bar {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border-bottom: px solid #202020;
+.about p {
+  max-width: 80%;
+  margin: 40px auto;
+  font-size: 20px;
+}
+
+.line-bar {
+  background: #505050;
+  width: 10%;
+  height: 5px;
+  margin-left: 45%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.panel-box {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: -100px;
+}
+
+/* --- may or may not use this extra reset on the bar ---
+@media (max-width: 1300px) { 
+  .line-bar {
+    width: 13%;
+    margin-left: 43.5%;
+  }
+}
+*/
+
+@media (max-width: 1040px) {
+  .panel-box {
+    margin-bottom: -75px;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel-box {
+    margin-bottom: 0px;
+  }
+
+  .about h2 {
+    padding: 0px;
+  }
+  
+  .about p {
+    max-width: 90%;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+
+  .line-bar {
+    background: #505050;
+    width:25%;
+    height: 5px;
+    margin-left: 37.5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .header-img {
+    margin-bottom: 20px;
+  }
 }
