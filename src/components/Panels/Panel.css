@@ -1,6 +1,6 @@
 .panel-container {
-  display: flex;
-  align-items: flex-start;
+  display: ;
+  align-items: ;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-size: 20px;
   margin: 50px 0px;
@@ -13,10 +13,9 @@
 }
 
 .panel-img {
-  width: 50%;
-  order: 1;
+  width: 45%;
   box-shadow: 10px -10px 30px -5px;
-  margin: 0px -20px;
+  margin: 0 2.5% 0;
 }
 
 .panel-container strong {
@@ -29,31 +28,20 @@
 }
 
 .panel-txt {
-  width: 50%;
-  order: 2;
-  padding: 40px 2.5% 0px;
+  width: 45%;
+  padding-top: 25px;
   line-height: 200%;
-  margin: 0px 20px;
+  margin: 0 2.5% 0;
 }
 
 @media (max-width: 1520px) {
-  .panel-img {
-    margin: 0;
-  }
-
   .panel-txt {
     font-size: 16px;
-    padding: 40px 0px;
     line-height: 175%;
-    margin: 0px 30px 0px 30px;
   }
 }
 
 @media (max-width: 1240px) {
-  .panel-container > div {
-    padding-top: 10px;
-  }
-
   .panel-txt {
     line-height: 150%;
   }
@@ -61,29 +49,27 @@
 
 @media (max-width: 1040px) {
   .panel-container {
-    flex-direction: column;
-    align-items: center;
     margin: 0px;
   }
 
   .panel-img {
     width: 100%;
     padding: 0px;
-    margin: 15px 0px;
-    order: 1 !important;
+    margin: 40px 0px 25px;
+    float: none !important;
   }
   
   .panel-txt {
     width: 90%;
     padding: 0px;
-    margin: 15px 0px;
-    line-height: 150%;
-    order: 2;
+    margin: 20px auto 40px;
+    line-height: 175%;
+    float: none !important;
   }
 }
 
 @media (max-width: 640px) {
   .panel-txt {
-    line-height: 125%;
+    line-height: 140%;
   }
 }
