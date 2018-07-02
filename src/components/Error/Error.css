@@ -3,19 +3,29 @@
 }
 
 .error-container h1 {
+  /* cool gradient black to gray but doesn't look as good as expected 
   background: linear-gradient(to top right, black, #D0D0D0); 
   -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  */
   font-size: 400px;
   text-align: center;
-  margin: 0;
+  margin: 60px auto;
 }
 
 .error-container p {
+  width: 80%;
   font-size: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .error-container p > a {
   color: #808080;
+}
+
+@media (max-width: 640px) {
+  .error-container h1 {
+    margin: 15px auto;
+  }
 }

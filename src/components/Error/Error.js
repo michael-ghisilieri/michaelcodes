@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Error.css'
 
-class Error extends Component {
+class Error404 extends Component {
   render() {
     return (
       <div className="error-container">
@@ -12,4 +12,4 @@ class Error extends Component {
   }
 }
 
-export default Error
+export default Error404

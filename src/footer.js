@@ -11,7 +11,7 @@ class Footer extends Component {
         <div>
           <div className="footer-name">
             <p>&copy; 2018 Michael Ghisilieri</p>
-            <p className="footer-credit">All icons on this page are credited to <a target="_blank" href="http://linea.io/">linea.io</a></p>
+            <p className="footer-credit">All icons on this page are credited to <a target="_blank" rel="noopener noreferrer" href="http://linea.io/">linea.io</a></p>
           </div>
         
           <nav>
@@ -40,7 +40,7 @@ class Footer extends Component {
           </nav>
 
           <div className="footer-icons">
-            <Link style={{'padding-right': '20px'}} target="_blank" to="https://github.com/michael-ghisilieri">
+            <Link style={{paddingRight: '20px'}} target="_blank" to="https://github.com/michael-ghisilieri">
               <img src={github} alt="github logo" />
             </Link>
 

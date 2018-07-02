@@ -1,10 +1,12 @@
 .footer {
   width: 100%;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
   /* original dark grey rgb(34, 38, 41) */
   background-color: rgba(0, 0, 0, 1);
-  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  font-family: 'Share', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-weight: 500;
-  margin-top: 100px;
 }
 
 .footer > div {
@@ -13,9 +15,8 @@
   justify-content: space-evenly;
   color: #FFF;
   width: 80%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 25px 0px;
+  margin: 10px auto 0;
+  padding: 25px 0px 20px 0px;
   bottom: 0;
   overflow: hidden;
 }
@@ -23,14 +24,14 @@
 .footer-name {
   float: left;
   width: 20%;
-  font-size: 20px;
-  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  font-size: 18px;
+  font-family: 'Share', serif, Segoe UI, Frutiger, Frutiger Linotype;
   margin-top: -20px;
 }
 
 .footer-credit {
-  font-size: 14px;
-  margin-top: -20px;
+  font-size: 13px;
+  margin-top: -10px;
 }
 
 .footer-credit > a {
@@ -80,6 +81,10 @@
 
 /* used to be 1240px before credit line was added */
 @media (max-width: 1520px) {
+  .footer {
+    height: 160px;
+  }
+
   .footer-name {
     float: left;
     width: 50%;
@@ -100,7 +105,7 @@
   }
 
   .footer nav li {
-    padding: 10px 40px 0px 0px;
+    padding: 10px 30px 0px 0px;
   }
 
   .footer-icons {
@@ -114,6 +119,7 @@
 
 @media (max-width: 640px) {
   .footer {
+    height: 240px;
     margin-top: 50px;
   }
 
@@ -142,7 +148,7 @@
   }
 
   .footer nav li {
-    padding: 0px 0px 25px 25px;
+    padding: 15px 0px 25px 25px;
   }
 
   .footer-icons {
