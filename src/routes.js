@@ -1,21 +1,25 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import history from './history'
 import App from './App'
 import Home from './components/Home/Home'
-import Projects from './components/Projects/Projects'
-import Games from './components/Games/Games'
 import AboutMe from './components/AboutMe/AboutMe'
+import Header from './header'
+import Footer from './footer'
+import Error404 from './components/Error/Error'
 
 const createRoutes = () => {
   return (
     <Router history={history}>
-      <div>
-        <Route path="/" component={App} />
-        <Route path="/home" component={Home} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/games" component={Games} />
-        <Route path="/about-me" component={AboutMe} />
+      <div className="page-container">
+        <Header />
+        <div className="body-container">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="*" component={Error404} />
+          </Switch>
+        </div>
+        <Footer />
       </div>
     </Router>
   )

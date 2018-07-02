@@ -23,7 +23,7 @@ class Card extends Component {
           <p><br />{this.props.title}</p>
         </strong>
 
-        <p style={{'text-align': 'left'}}>{this.props.content}</p>
+        <p style={{textAlign: 'left'}}>{this.props.content}</p>
 
       </div>
     )
