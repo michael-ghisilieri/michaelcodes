@@ -2,7 +2,7 @@
   display: ;
   align-items: ;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
-  font-size: 20px;
+  font-size: 18px;
   margin: 50px 0px;
 }
 
@@ -36,6 +36,7 @@
 
 @media (max-width: 1520px) {
   .panel-txt {
+    padding-top: 15px;
     font-size: 16px;
     line-height: 175%;
   }
@@ -43,6 +44,8 @@
 
 @media (max-width: 1240px) {
   .panel-txt {
+    padding-top: 10px;
+    font-size: 14px;
     line-height: 150%;
   }
 }
