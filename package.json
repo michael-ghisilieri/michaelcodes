@@ -2,8 +2,10 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://michael-ghisilieri.github.io/first-website",
   "dependencies": {
     "bootstrap": "^4.1.1",
+    "gh-pages": "^1.2.0",
     "history": "^4.7.2",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
@@ -19,6 +21,8 @@
     "test": "react-scripts test --env=jsdom",
     "lint": "eslint ./src",
     "fix": "yarn lint --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
