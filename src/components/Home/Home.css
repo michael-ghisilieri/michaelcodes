@@ -8,16 +8,16 @@
   margin-bottom: 50px;
 }
 
-.about {
+.about-home {
   text-align: center;
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
 }
 
-.about h2 {
+.about-home h2 {
   padding-top: 25px;
 }
 
-.about p {
+.about-home p {
   max-width: 80%;
   margin: 40px auto;
   font-size: 20px;

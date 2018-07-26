@@ -17,7 +17,7 @@ class Home extends Component {
 
         <img className="header-img" src={codephoto} alt="orange justice" />
 
-        <div className="about">
+        <div className="about-home">
           <h2>About Me</h2>
           <div className="line-bar" />
 

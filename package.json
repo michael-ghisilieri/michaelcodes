@@ -2,7 +2,7 @@
   "name": "michaelcodes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://michael-ghisilieri.github.io/michaelcodes",
+  "homepage": "https://michaelcodes.me",
   "dependencies": {
     "bootstrap": "^4.1.1",
     "gh-pages": "^1.2.0",

@@ -1,0 +1,53 @@
+.aboutme-top {
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  font-weight: 500;
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.aboutme-top::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#personal-photo {
+  width: 30%;
+  margin-top: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+.aboutme-top div {
+  width: 60%;
+  float: right;
+}
+
+.aboutme-top div > h1 {
+  font-size: 72px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutme-top div > p {
+  font-size: 24px;
+}
+
+.aboutme-top div ul {
+  display: flex;
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+  font-size: 24px;
+}
+
+.aboutme-top div li {
+  margin-right: 40px;
+  text-align: center;
+}
+
+.aboutme-icons img {
+  height: 100px;
+}
