@@ -7,6 +7,7 @@ import htmlLogo from '../../images/aboutMeIcons/html.png'
 import javascriptLogo from '../../images/aboutMeIcons/javascript.png'
 import nodejsLogo from '../../images/aboutMeIcons/nodejs.png'
 import reactLogo from '../../images/aboutMeIcons/react.png'
+import textData from '../../content.json'
 
 class About extends Component {
   render() {
@@ -16,9 +17,9 @@ class About extends Component {
           <img id="personal-photo" src={personalPhoto} alt="me" />
           <div>
             <h1>about me</h1>
-            <p>After completing my Bachelor's Degree in Computer Engineering in 2017 and wanting to expand my knowledge even further, I decided to pursue web development. This is something that I quickly got hooked on and haven't wanted to stop since.</p>
-            <p>Web development is something I'm completely invested in now and will continue to pursue moving forward. I love being able to combine my creativity and passion for programming with new technologies in order to build and develop projects to make a better tomorrow.</p>
-            <p>Here are the main languages and tools that are keeping me busy...</p>
+            <p>{textData.aboutMe1}</p>
+            <p>{textData.aboutMe2}</p>
+            <p>Here are the main languages and tools that are keeping me busy!</p>
             <ul className="aboutme-icons">
               <li><img src={javascriptLogo} alt="javascript" />JavaScript</li>
               <li><img src={nodejsLogo} alt="nodejs" />Node.js</li>

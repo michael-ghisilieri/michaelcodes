@@ -2,8 +2,8 @@
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-weight: 500;
   width: 70%;
-  margin: 0 auto;
-  padding: 50px 0px;
+  margin: 0 auto -60px;
+  padding-top: 50px;
 }
 
 .aboutme-top::after {
@@ -32,11 +32,13 @@
 }
 
 .aboutme-top div > p {
-  font-size: 24px;
+  font-size: 22px;
+  text-align: center;
 }
 
 .aboutme-top div ul {
   display: flex;
+  justify-content: space-evenly;
   margin-top: 50px;
   padding: 0;
   list-style: none;
@@ -44,7 +46,7 @@
 }
 
 .aboutme-top div li {
-  margin-right: 40px;
+  margin: 0px 20px;
   text-align: center;
 }
 
