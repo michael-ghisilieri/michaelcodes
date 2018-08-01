@@ -40,13 +40,13 @@ class Footer extends Component {
           </nav>
 
           <div className="footer-icons">
-            <Link style={{paddingRight: '20px'}} target="_blank" to="https://github.com/michael-ghisilieri">
+            <a style={{paddingRight: '20px'}} target="_blank" href="https://github.com/michael-ghisilieri">
               <img src={github} alt="github logo" />
-            </Link>
+            </a>
 
-            <Link target="_blank" to="https://www.linkedin.com/in/michael-ghisilieri/">
+            <a target="_blank" href="https://www.linkedin.com/in/michael-ghisilieri/">
               <img src={linkedin} alt="linkedin logo" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
