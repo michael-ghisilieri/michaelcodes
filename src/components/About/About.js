@@ -24,8 +24,8 @@ class About extends Component {
               <li><img src={javascriptLogo} alt="javascript" />JavaScript</li>
               <li><img src={nodejsLogo} alt="nodejs" />Node.js</li>
               <li><img src={reactLogo} alt="react" />React</li>
-              <li><img src={htmlLogo} alt="html" />HTML5</li>
-              <li><img src={cssLogo} alt="css" />CSS3</li>
+              <li><img src={htmlLogo} alt="html" /><span>HTML5</span></li>
+              <li><img src={cssLogo} alt="css" /><span>CSS3</span></li>
               <li><img src={githubLogo} alt="github" />GitHub</li>
             </ul>
           </div>

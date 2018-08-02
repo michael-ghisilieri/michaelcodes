@@ -51,5 +51,87 @@
 }
 
 .aboutme-icons img {
-  height: 100px;
+  height: 110px;
+}
+
+@media (max-width: 1520px) {
+  .aboutme-top {
+    width: 80%;
+  }
+
+  .aboutme-top div li {
+    margin: 0px 15px;
+  }
+
+  .aboutme-icons img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 1360px) {
+  #personal-photo {
+    width: 35%;
+  }
+
+  .aboutme-top div > h1 {
+    font-size: 64px;
+  }
+
+  .aboutme-top div > p {
+    font-size: 20px;
+  }
+
+  .aboutme-top div ul {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .aboutme-top div li { 
+    width: 20%;
+    margin: 0px 30px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1060px) {
+  #personal-photo {
+    width: 50%;
+    margin: 40px 0 20px;
+    padding: 0 25%;
+  }
+
+  .aboutme-top div {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .aboutme-top div span {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 830px) {
+  #personal-photo {
+    margin-top: 0px;
+  }
+
+  .aboutme-icons {
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 640px) {
+  #personal-photo {
+    width: 60%;
+    padding: 0 20%;
+  }
+
+  .aboutme-top div > p {
+    line-height: 140%;
+  }
+
+  .aboutme-icons {
+    margin-bottom: 30px;
+  }
 }
