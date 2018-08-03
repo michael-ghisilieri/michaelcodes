@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './About.css'
 import personalPhoto from '../../images/itme.jpg'
+import github from '../../images/aboutMeIcons/github-small.png'
+import linkedin from '../../images/aboutMeIcons/linkedin-small.png'
 import cssLogo from '../../images/aboutMeIcons/css.png'
 import githubLogo from '../../images/aboutMeIcons/github.png'
 import htmlLogo from '../../images/aboutMeIcons/html.png'
@@ -13,9 +15,19 @@ class About extends Component {
   render() {
     return (
       <div>
-        <div className="aboutme-top">
-          <img id="personal-photo" src={personalPhoto} alt="me" />
-          <div>
+        <div className="aboutme-page">
+          <div className="profile-card">
+            <img id="personal-photo" src={personalPhoto} alt="me" />
+            <div>
+              <img className="profile-card-icons" src={github} alt="github"/>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/michael-ghisilieri">github.com/michael-ghisilieri</a>
+            </div>
+            <div>
+              <img className="profile-card-icons" src={linkedin} alt="linkedin"/>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-ghisilieri/">linkedin.com/in/michael-ghisilieri</a>
+            </div>
+          </div>
+          <div className="aboutme-desc">
             <h1>about me</h1>
             <p>{textData.aboutMe1}</p>
             <p>{textData.aboutMe2}</p>

@@ -1,4 +1,4 @@
-.aboutme-top {
+.aboutme-page {
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
   font-weight: 500;
   width: 70%;
@@ -6,37 +6,53 @@
   padding-top: 50px;
 }
 
-.aboutme-top::after {
+.aboutme-page::after {
   content: '';
   display: table;
   clear: both;
 }
 
-#personal-photo {
+.profile-card {
   width: 30%;
-  margin-top: 100px;
-  border-radius: 50%;
   float: left;
 }
 
-.aboutme-top div {
+.profile-card a {
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.profile-card-icons {
+  padding: 10px 0 0 25px;
+}
+
+#personal-photo {
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+
+.aboutme-desc {
   width: 60%;
   float: right;
 }
 
-.aboutme-top div > h1 {
+.aboutme-desc > h1 {
   font-size: 72px;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
 }
 
-.aboutme-top div > p {
+.aboutme-desc p {
   font-size: 22px;
   text-align: justify;
 }
 
-.aboutme-top div ul {
+.aboutme-desc ul {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
@@ -45,7 +61,7 @@
   font-size: 24px;
 }
 
-.aboutme-top div li {
+.aboutme-desc li {
   margin: 0px 20px;
   text-align: center;
 }
@@ -55,11 +71,15 @@
 }
 
 @media (max-width: 1520px) {
-  .aboutme-top {
+  .aboutme-page {
     width: 80%;
   }
 
-  .aboutme-top div li {
+  .profile-card-icons {
+    padding-left: 35px;
+  }
+
+  .aboutme-desc li {
     margin: 0px 15px;
   }
 
@@ -69,24 +89,28 @@
 }
 
 @media (max-width: 1360px) {
-  #personal-photo {
+  .profile-card {
     width: 35%;
   }
 
-  .aboutme-top div > h1 {
+  .profile-card-icons {
+    padding-left: 20px;
+  }
+
+  .aboutme-desc h1 {
     font-size: 64px;
   }
 
-  .aboutme-top div > p {
+  .aboutme-desc p {
     font-size: 20px;
   }
 
-  .aboutme-top div ul {
+  .aboutme-desc ul {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  .aboutme-top div li { 
+  .aboutme-desc li { 
     width: 20%;
     margin: 0px 30px;
     padding-bottom: 40px;
@@ -94,19 +118,37 @@
 }
 
 @media (max-width: 1060px) {
+  .profile-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
   #personal-photo {
     width: 50%;
     margin: 40px 0 20px;
     padding: 0 25%;
   }
 
-  .aboutme-top div {
+  .profile-card-icons {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .profile-card a {
+    left: 10px;
+    font-size: 14px;
+  }
+
+  .aboutme-desc {
     width: 100%;
     margin: 0 auto;
     float: none;
   }
 
-  .aboutme-top div span {
+  .aboutme-desc span {
     padding: 0 10px;
   }
 }
@@ -114,6 +156,10 @@
 @media (max-width: 830px) {
   #personal-photo {
     margin-top: 0px;
+  }
+
+  .profile-card-icons {
+    padding-left: 0px;
   }
 
   .aboutme-icons {
@@ -127,7 +173,7 @@
     padding: 0 20%;
   }
 
-  .aboutme-top div > p {
+  .aboutme-desc p {
     line-height: 140%;
   }
 
