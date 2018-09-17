@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Coming+Soon|News+Cycle|Share');
 
 body {
-  background-color: #F5F5F5;
+  background-image: url('./images/backgroundPattern.png');
   margin: 0;
   padding: 0;
   height: 100%;
