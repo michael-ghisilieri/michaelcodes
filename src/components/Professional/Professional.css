@@ -1,0 +1,134 @@
+.prof-page {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+}
+
+.prof-section {
+  margin-bottom: 40px;
+}
+
+.label {
+  font-size: 36px;
+  color: white;
+  padding: 0px 10px;
+}
+
+.prof-label {
+  background-color: black;
+}
+
+.prof-page h2 {
+  margin: 10px 0px;
+}
+
+.prof-page ul {
+  margin-top: 0px;
+}
+
+.clr {
+  clear: both;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exp-edu-width {
+  float: left;
+  width: 45%;
+  padding-right: 5%;
+}
+
+.square-bullets li {
+  list-style: square;
+}
+
+.square-bullets ul {
+  padding-left: 30px;
+}
+
+.proj-info {
+  padding-right: 5%;
+  width: 28.3%;
+  text-align: justify;
+}
+
+.skill-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box-with-border {
+  margin: 40px 0px;
+  border-style: none;
+  border-width: 2px;
+  border-color: black;
+  color: black;
+  width: 40%;
+  /*box-shadow: 5px -5px 10px -5px;*/
+  box-sizing: border-box;
+}
+
+.middle-box {
+  width: 20%;
+}
+
+.box-with-border h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.white-bar {
+  width: 40%;
+  padding: 10px 0px;
+  border-top: 4px solid white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.black-bar {
+  width: 40%;
+  padding: 10px 0px;
+  border-top: 4px solid black;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box-with-border ul {
+  padding: 0px 15px;
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+.list-padding li {
+  padding: 5px 0px;
+}
+
+.date-margin {
+  margin-top: -15px;
+}
+
+@media(max-width: 1300px) {
+  .proj-info {
+    padding-right: 5%;
+    width: 45%;
+  }
+}
+
+@media(max-width: 920px) {
+  .proj-info {
+    padding-right: 0%;
+    width: 100%;
+  }
+
+  .exp-edu-width {
+    float: none;
+    width: 100%;
+    padding-right: 0%;
+  }
+}
