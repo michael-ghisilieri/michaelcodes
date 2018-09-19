@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Professional.css'
 import textData from '../../content.json'
+import codeCollage from '../../images/codeCollage.png'
 
 class Professional extends Component {
   render() {
@@ -25,7 +26,7 @@ class Professional extends Component {
           </div>
         </div>
 
-        <div className="exp-edu-width square-bullets">
+        <div className="half-width square-bullets">
           <span className="label prof-label">EXPERIENCE</span>
           <div className="prof-section">
             <h2>Undergraduate Research Assistant</h2>
@@ -38,7 +39,7 @@ class Professional extends Component {
           </div>
         </div>
 
-        <div className="exp-edu-width square-bullets">
+        <div className="half-width square-bullets">
           <span className="label prof-label">EDUCATION</span>
           <div className="prof-section">
             <h2>UNIVERSITY OF NEVADA, LAS VEGAS</h2>
@@ -54,36 +55,12 @@ class Professional extends Component {
         
         <span className="label prof-label">SKILLS</span>
         <div className="clr"/>
-        <div className="skill-section">
-          <div className="box-with-border">
-            <h2>Front End</h2>
-            <div className="black-bar"/>
-            <ul>
-              <li>ReactJS</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Desktop &amp; Mobile Design</li>
-            </ul>
+        <div>
+          <div className="skill-desc">
+            <p>{textData.profSkillSum1}</p>
+            <p>{textData.profSkillSum2}</p>
           </div>
-          <div className="box-with-border list-padding middle-box">
-            <h2>Back End</h2>
-            <div className="black-bar"/>
-            <ul>
-              <li>NodeJS</li>
-              <li>Express</li>
-              <li>MongoDB</li>
-            </ul>
-          </div>
-          <div className="box-with-border">
-            <h2>Other</h2>
-            <div className="black-bar"/>
-            <ul>
-              <li>C++</li>
-              <li>Github</li>
-              <li>Testing &amp; Debugging</li>
-              <li>Visual Studio Code</li>
-            </ul>
-          </div>
+          <img id="skill-image" src={codeCollage} alt="codeCollage" />
         </div>
         <div className="clr"/>
       </div>
