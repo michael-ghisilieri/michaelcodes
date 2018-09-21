@@ -62,6 +62,10 @@ header nav li {
   font-size: 24px;
 }
 
+#mail-img {
+  width: 32px;
+}
+
 .header-links:hover {
   color: #FFF;
 }

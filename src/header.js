@@ -1,8 +1,28 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './header.css'
+import mailIcon from './images/mailIcon.png'
+
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "Click here to copy my email address!",
+    };
+
+    this.copyEmail = this.copyEmail.bind(this);
+  }
+
+  copyEmail() {
+    this.setState(
+      {message: "My email is now copied to your clipboard!"}
+    );
+    //alert("Copied the email: " + copyText.value);
+  }
+
   render() {
     return (
       <header>
@@ -30,11 +50,14 @@ class Header extends Component {
                   personal
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="header-links">
-                  contact
-                </Link>
-              </li>
+              <CopyToClipboard text="michael.ghisilieri@gmail.com">
+                <li data-tip={this.state.message}>
+                  <a onClick={this.copyEmail}>
+                    <img id="mail-img" src={mailIcon} />
+                  </a>
+                </li>
+              </CopyToClipboard>
+              <ReactTooltip place="bottom" type="light" effect="solid" getContent={() => this.state.message}/>
             </ul>
           </nav>
         </div>
