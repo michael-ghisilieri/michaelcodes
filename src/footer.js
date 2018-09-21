@@ -1,10 +1,29 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import ReactTooltip from 'react-tooltip'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './footer.css'
+import mailIcon from './images/mailIcon.png'
 import github from './images/github32px.png'
 import linkedin from './images/linkedin34px.png'
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "Click here to copy my email address!",
+    };
+
+    this.copyEmail = this.copyEmail.bind(this);
+  }
+
+  copyEmail() {
+    this.setState(
+      {message: "My email is now copied to your clipboard!"}
+    );
+    //alert("Copied the email: " + copyText.value);
+  }
+
   render() {
     return (
       <div className="footer">
@@ -31,11 +50,14 @@ class Footer extends Component {
                   personal
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="footer-links">
-                  contact
-                </Link>
-              </li>
+              <CopyToClipboard text="michael.ghisilieri@gmail.com">
+                <li data-for="footer-tip" data-tip={this.state.message} data-place="top">
+                  <a onClick={this.copyEmail}>
+                    <img id="mail-img" src={mailIcon} />
+                  </a>
+                </li>
+              </CopyToClipboard>
+              <ReactTooltip id="footer-tip" type="light" effect="solid" getContent={() => this.state.message}/>
             </ul>
           </nav>
 

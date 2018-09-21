@@ -51,13 +51,13 @@ class Header extends Component {
                 </Link>
               </li>
               <CopyToClipboard text="michael.ghisilieri@gmail.com">
-                <li data-tip={this.state.message}>
+                <li data-for="header-tip" data-tip={this.state.message} data-place="bottom">
                   <a onClick={this.copyEmail}>
                     <img id="mail-img" src={mailIcon} />
                   </a>
                 </li>
               </CopyToClipboard>
-              <ReactTooltip place="bottom" type="light" effect="solid" getContent={() => this.state.message}/>
+              <ReactTooltip id="header-tip" type="light" effect="solid" getContent={() => this.state.message}/>
             </ul>
           </nav>
         </div>
