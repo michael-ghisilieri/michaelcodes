@@ -50,19 +50,18 @@ class Footer extends Component {
                   personal
                 </Link>
               </li>
-              <CopyToClipboard text="michael.ghisilieri@gmail.com">
-                <li data-for="footer-tip" data-tip={this.state.message} data-place="top">
-                  <a onClick={this.copyEmail}>
-                    <img id="mail-img" src={mailIcon} alt="email"/>
-                  </a>
-                </li>
-              </CopyToClipboard>
-              <ReactTooltip id="footer-tip" type="light" effect="solid" getContent={() => this.state.message}/>
             </ul>
           </nav>
 
           <div className="footer-icons">
-            <a style={{paddingRight: '20px'}} target="_blank" rel="noopener noreferrer" href="https://github.com/michael-ghisilieri">
+            <CopyToClipboard text="michael.ghisilieri@gmail.com">
+              <a onClick={this.copyEmail} data-for="footer-tip" data-tip={this.state.message} data-place="top">
+                <img id="mail-img-footer" src={mailIcon} alt="email"/>
+              </a>
+            </CopyToClipboard>
+            <ReactTooltip id="footer-tip" type="light" effect="float" getContent={() => this.state.message}/>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/michael-ghisilieri">
               <img src={github} alt="github logo" />
             </a>
 
