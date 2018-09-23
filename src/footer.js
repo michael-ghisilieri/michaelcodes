@@ -53,7 +53,7 @@ class Footer extends Component {
               <CopyToClipboard text="michael.ghisilieri@gmail.com">
                 <li data-for="footer-tip" data-tip={this.state.message} data-place="top">
                   <a onClick={this.copyEmail}>
-                    <img id="mail-img" src={mailIcon} />
+                    <img id="mail-img" src={mailIcon} alt="email"/>
                   </a>
                 </li>
               </CopyToClipboard>

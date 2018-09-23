@@ -53,7 +53,7 @@ class Header extends Component {
               <CopyToClipboard text="michael.ghisilieri@gmail.com">
                 <li data-for="header-tip" data-tip={this.state.message} data-place="bottom">
                   <a onClick={this.copyEmail}>
-                    <img id="mail-img" src={mailIcon} />
+                    <img id="mail-img" src={mailIcon} alt="email"/>
                   </a>
                 </li>
               </CopyToClipboard>
