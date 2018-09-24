@@ -12,8 +12,13 @@
   text-align: left;
 }
 
+.card-item > p {
+  text-align: justify;
+}
+
 .card-item img {
   width: 64px;
+  margin-bottom: -20px;
 }
 
 @media (max-width: 960px) {
@@ -27,6 +32,14 @@
   .card-item {
     width: 45%;
     padding: 20px 10px;
+    /*
+    width: 100%;
+    padding: 0px 0px 40px;
+    */
+  }
+
+  .card-item img {
+    margin-bottom: -30px;
   }
 
   .card-item > div {

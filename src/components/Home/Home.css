@@ -21,15 +21,13 @@
   max-width: 80%;
   margin: 40px auto;
   font-size: 20px;
+  text-align: center;
 }
 
 .line-bar {
-  background: #505050;
-  width: 10%;
-  height: 5px;
-  margin-left: 45%;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  border-top: 3px solid black;
+  width: 15%;
+  margin: 40px auto 0px;
 }
 
 .card-box {
@@ -58,9 +56,21 @@
   .panel-box {
     margin-bottom: -75px;
   }
+
+  .line-bar {
+    width: 25%;
+  }
 }
 
 @media (max-width: 640px) {
+  .about-home p {
+    text-align: justify;
+  }
+  
+  .card-box {
+    width: 80%;
+  }
+
   .panel-box {
     margin-bottom: 0px;
   }
@@ -76,12 +86,9 @@
   }
 
   .line-bar {
-    background: #505050;
-    width:25%;
-    height: 5px;
-    margin-left: 37.5%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    border-top: 3px solid black;
+    width: 40%;
+    margin: 0 auto -20px;
   }
 
   .header-img {
