@@ -45,7 +45,7 @@
 
 .footer nav {
   float: left;
-  width: 70%;
+  width: 60%;
   text-align: center;
   margin: 0 -5%;
 }
@@ -74,9 +74,18 @@
 
 .footer-icons {
   float: left;
-  width: 10%;
+  width: 20%;
   text-align: right;
-  margin: 0 5%;
+  margin: 0;
+}
+
+.footer-icons a {
+  padding-left: 20px;
+}
+
+#mail-img-footer {
+  width: 40px;
+  padding-bottom: 2px;
 }
 
 /* used to be 1240px before credit line was added */
