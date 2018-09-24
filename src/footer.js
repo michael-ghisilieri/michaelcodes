@@ -13,15 +13,12 @@ class Footer extends Component {
     this.state = {
       message: "Click here to copy my email address!",
     };
-
-    this.copyEmail = this.copyEmail.bind(this);
   }
 
-  copyEmail() {
+  copyEmail = () => {
     this.setState(
       {message: "My email is now copied to your clipboard!"}
     );
-    //alert("Copied the email: " + copyText.value);
   }
 
   render() {
