@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import ReactTooltip from 'react-tooltip'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './About.css'
 import personalPhoto from '../../images/itme.jpg'
 import github from '../../images/aboutMeIcons/github-small.png'
@@ -10,21 +12,42 @@ import javascriptLogo from '../../images/aboutMeIcons/javascript.png'
 import nodejsLogo from '../../images/aboutMeIcons/nodejs.png'
 import reactLogo from '../../images/aboutMeIcons/react.png'
 import textData from '../../content.json'
+import mailBlack from '../../images/mailBlack.png'
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: "Click here to copy my email address!",
+    };
+  }
+
+  copyEmail = () => {
+    this.setState(
+      {message: "My email is now copied to your clipboard!"}
+    );
+  }
+
   render() {
     return (
       <div>
         <div className="aboutme-page">
           <div className="profile-card">
             <img id="personal-photo" src={personalPhoto} alt="me" />
-            <div>
+            <CopyToClipboard text="michael.ghisilieri@gmail.com" className="mobile-icon-margin">
+              <a onClick={this.copyEmail} data-for="about-tip" data-tip={this.state.message} data-place="top">
+                <img className="profile-card-icons" id="mail-img-about" src={mailBlack} alt="email"/>
+                <span id="send-email">Contact me by sending an email!</span>
+              </a>
+            </CopyToClipboard>
+            <ReactTooltip id="about-tip" type="light" effect="float" getContent={() => this.state.message}/>
+            <div className="mobile-icon-margin">
               <img className="profile-card-icons" src={github} alt="github"/>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/michael-ghisilieri">github.com/michael-ghisilieri</a>
+              <a className="profile-card-links" target="_blank" rel="noopener noreferrer" href="https://github.com/michael-ghisilieri">github.com/michael-ghisilieri</a>
             </div>
-            <div>
+            <div className="mobile-icon-margin">
               <img className="profile-card-icons" src={linkedin} alt="linkedin"/>
-              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-ghisilieri/">linkedin.com/in/michael-ghisilieri</a>
+              <a className="profile-card-links" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/michael-ghisilieri/">linkedin.com/in/michael-ghisilieri</a>
             </div>
           </div>
           <div className="aboutme-desc">

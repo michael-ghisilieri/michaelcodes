@@ -17,7 +17,7 @@
   float: left;
 }
 
-.profile-card a {
+.profile-card-links {
   position: relative;
   left: 20px;
   bottom: 10px;
@@ -33,6 +33,17 @@
   width: 100%;
   margin-top: 100px;
   border-radius: 50%;
+}
+
+#mail-img-about {
+  width: 40px;
+  padding: 10px 0 0 21px;
+}
+
+#send-email {
+  position: relative;
+  left: 15px;
+  bottom: 6px;
 }
 
 .aboutme-desc {
@@ -79,6 +90,10 @@
     padding-left: 35px;
   }
 
+  #mail-img-about {
+    padding-left: 31px;
+  }
+
   .aboutme-desc li {
     margin: 0px 15px;
   }
@@ -95,6 +110,10 @@
 
   .profile-card-icons {
     padding-left: 20px;
+  }
+
+  #mail-img-about {
+    padding-left: 17px;
   }
 
   .aboutme-desc h1 {
@@ -135,6 +154,15 @@
   .profile-card-icons {
     margin-left: 0px;
     padding-left: 0px;
+  }
+
+  .mobile-icon-margin {
+    margin: 0 20px;
+  }
+
+  #mail-img-about {
+    width: 40px;
+    padding: 10px 0 0 11px;
   }
 
   .profile-card a {
