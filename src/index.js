@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import createRoutes from './routes'
-//import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 
 const routes = createRoutes()
 

@@ -65,7 +65,7 @@ class Footer extends Component {
                 data-tip={this.state.message}
                 data-place="top"
               >
-                <img id="mail-img-footer" src={mailIcon} alt="email"  />
+                <img id="mail-img-footer" src={mailIcon} alt="email" />
               </a>
             </CopyToClipboard>
             <ReactTooltip
@@ -73,7 +73,7 @@ class Footer extends Component {
               type="light"
               effect="float"
               getContent={() => this.state.message}
-             />
+            />
 
             <a
               target="_blank"

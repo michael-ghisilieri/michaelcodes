@@ -17,12 +17,12 @@ class Professional extends Component {
           <div className="proj-info">
             <h2>Spots</h2>
             <p className="date-margin">Jan 2017 - May 2017</p>
-            <p dangerouslySetInnerHTML={{__html: textData.profProject2}} />
+            <p dangerouslySetInnerHTML={{ __html: textData.profProject2 }} />
           </div>
           <div className="proj-info">
             <h2>Microgrid</h2>
             <p className="date-margin">Sept 2016 - May 2017</p>
-            <p dangerouslySetInnerHTML={{__html: textData.profProject3}} />
+            <p dangerouslySetInnerHTML={{ __html: textData.profProject3 }} />
           </div>
         </div>
 
@@ -33,7 +33,10 @@ class Professional extends Component {
             <p className="date-margin">Sept 2016 - May 2017</p>
             <ul>
               <li>Worked on multiple team projects simultaneously</li>
-              <li>Microcontroller programming in C++ and FPGA programming in Verilog on Cyclone IV/V</li>
+              <li>
+                Microcontroller programming in C++ and FPGA programming in
+                Verilog on Cyclone IV/V
+              </li>
               <li>Chip design in the C5 Process</li>
             </ul>
           </div>
@@ -51,10 +54,10 @@ class Professional extends Component {
           </div>
         </div>
 
-         <div className="clr"/>
-        
+        <div className="clr" />
+
         <span className="label prof-label">SKILLS</span>
-        <div className="clr"/>
+        <div className="clr" />
         <div>
           <div className="skill-desc">
             <p>{textData.profSkillSum1}</p>
@@ -62,7 +65,7 @@ class Professional extends Component {
           </div>
           <img id="skill-image" src={codeCollage} alt="codeCollage" />
         </div>
-        <div className="clr"/>
+        <div className="clr" />
       </div>
     )
   }

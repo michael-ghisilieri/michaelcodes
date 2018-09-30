@@ -1,7 +1,9 @@
 import React from 'react'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+/*
 import history from './history'
 import App from './App'
+*/
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Header from './header'
