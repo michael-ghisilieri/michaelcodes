@@ -5,22 +5,19 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './header.css'
 import mailIcon from './images/mailIcon.png'
 
-
 class Header extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      message: "Click here to copy my email address!",
-    };
+      message: 'Click here to copy my email address!',
+    }
 
-    this.copyEmail = this.copyEmail.bind(this);
+    this.copyEmail = this.copyEmail.bind(this)
   }
 
   copyEmail() {
-    this.setState(
-      {message: "My email is now copied to your clipboard!"}
-    );
-    //alert("Copied the email: " + copyText.value);
+    this.setState({ message: 'My email is now copied to your clipboard!' })
+    // alert("Copied the email: " + copyText.value);
   }
 
   render() {
@@ -51,13 +48,22 @@ class Header extends Component {
                 </Link>
               </li>
               <CopyToClipboard text="michael.ghisilieri@gmail.com">
-                <li data-for="header-tip" data-tip={this.state.message} data-place="bottom">
+                <li
+                  data-for="header-tip"
+                  data-tip={this.state.message}
+                  data-place="bottom"
+                >
                   <a onClick={this.copyEmail}>
-                    <img id="mail-img-header" src={mailIcon} alt="email"/>
+                    <img id="mail-img-header" src={mailIcon} alt="email" />
                   </a>
                 </li>
               </CopyToClipboard>
-              <ReactTooltip id="header-tip" type="light" effect="float" getContent={() => this.state.message}/>
+              <ReactTooltip
+                id="header-tip"
+                type="light"
+                effect="float"
+                getContent={() => this.state.message}
+              />
             </ul>
           </nav>
         </div>
