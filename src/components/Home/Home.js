@@ -14,7 +14,9 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <img className="header-img" src={codephoto} alt="orange justice" />
+        <div className="header-img-box">
+          <img className="header-img" src={codephoto} alt="orange justice" />
+        </div>
 
         <div className="about-home">
           <h2>About Me</h2>
