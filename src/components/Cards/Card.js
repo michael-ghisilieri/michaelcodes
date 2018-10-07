@@ -25,7 +25,7 @@ class Card extends Component {
           </p>
         </strong>
 
-        <p style={{ textAlign: 'center' }}>{this.props.content}</p>
+        <p>{this.props.content}</p>
       </div>
     )
   }
