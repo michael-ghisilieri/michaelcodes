@@ -17,21 +17,21 @@ class Header extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('mousedown', this.handleClick, false);
+    document.addEventListener('mousedown', this.handleClick, false)
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousedown', this.handleClick, false);
+    document.removeEventListener('mousedown', this.handleClick, false)
   }
 
   handleClick = event => {
     if (ReactDOM.findDOMNode(this).contains(event.target)) {
       // click was inside of the component
-      return;
+      return
     }
 
     // click was outside of the component
-    this.setState({ dropdown: 'none' });
+    this.setState({ dropdown: 'none' })
   }
 
   copyEmail = () => {
@@ -39,7 +39,7 @@ class Header extends Component {
   }
 
   toggleDropdown = () => {
-    var dropdown = this.state.dropdown === 'none' ? 'block': 'none';
+    var dropdown = this.state.dropdown === 'none' ? 'block' : 'none'
     this.setState({ dropdown: dropdown })
   }
 
@@ -58,22 +58,39 @@ class Header extends Component {
           </h3>
 
           <div className="menu-width">
-            <img id="menu-img" src={menu} alt="menu" onClick={this.toggleDropdown}/>
+            <img
+              id="menu-img"
+              src={menu}
+              alt="menu"
+              onClick={this.toggleDropdown}
+            />
           </div>
-          <div className="dropdown" style={{display: this.state.dropdown}}>
+          <div className="dropdown" style={{ display: this.state.dropdown }}>
             <ul>
               <li>
-                <Link to="/about" className="dropdown-links" onClick={this.toggleDropdown}>
+                <Link
+                  to="/about"
+                  className="dropdown-links"
+                  onClick={this.toggleDropdown}
+                >
                   about me
                 </Link>
               </li>
               <li>
-                <Link to="/professional" className="dropdown-links" onClick={this.toggleDropdown}>
+                <Link
+                  to="/professional"
+                  className="dropdown-links"
+                  onClick={this.toggleDropdown}
+                >
                   professional
                 </Link>
               </li>
               <li>
-                <Link to="/personal" className="dropdown-links" onClick={this.toggleDropdown}>
+                <Link
+                  to="/personal"
+                  className="dropdown-links"
+                  onClick={this.toggleDropdown}
+                >
                   personal
                 </Link>
               </li>
