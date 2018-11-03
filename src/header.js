@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import { Link } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './header.css'
+import menu from './images/menuWhite.png'
 import mailIcon from './images/mailIcon.png'
 
 class Header extends Component {
@@ -10,14 +12,39 @@ class Header extends Component {
     super(props)
     this.state = {
       message: 'Click here to copy my email address!',
+      dropdown: 'none',
     }
-
-    this.copyEmail = this.copyEmail.bind(this)
   }
 
-  copyEmail() {
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClick, false);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClick, false);
+  }
+
+  handleClick = event => {
+    if (ReactDOM.findDOMNode(this).contains(event.target)) {
+      // click was inside of the component
+      return;
+    }
+
+    // click was outside of the component
+    this.setState({ dropdown: 'none' });
+  }
+
+  copyEmail = () => {
     this.setState({ message: 'My email is now copied to your clipboard!' })
-    // alert("Copied the email: " + copyText.value);
+  }
+
+  toggleDropdown = () => {
+    var dropdown = this.state.dropdown === 'none' ? 'block': 'none';
+    this.setState({ dropdown: dropdown })
+  }
+
+  clearDropdown = () => {
+    this.setState({ dropdown: 'none' })
   }
 
   render() {
@@ -25,10 +52,33 @@ class Header extends Component {
       <header>
         <div className="container">
           <h3>
-            <Link to="/" className="name">
+            <Link to="/" className="name" onClick={this.clearDropdown}>
               michael ghisilieri
             </Link>
           </h3>
+
+          <div className="menu-width">
+            <img id="menu-img" src={menu} alt="menu" onClick={this.toggleDropdown}/>
+          </div>
+          <div className="dropdown" style={{display: this.state.dropdown}}>
+            <ul>
+              <li>
+                <Link to="/about" className="dropdown-links" onClick={this.toggleDropdown}>
+                  about me
+                </Link>
+              </li>
+              <li>
+                <Link to="/professional" className="dropdown-links" onClick={this.toggleDropdown}>
+                  professional
+                </Link>
+              </li>
+              <li>
+                <Link to="/personal" className="dropdown-links" onClick={this.toggleDropdown}>
+                  personal
+                </Link>
+              </li>
+            </ul>
+          </div>
 
           <nav>
             <ul>
