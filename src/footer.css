@@ -128,14 +128,16 @@
 
 @media (max-width: 640px) {
   .footer {
-    height: 220px;
+    height: 200px;
     margin-top: 50px;
   }
 
   .footer > div {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 20px 0px 0px;
   }
 
   .footer-name {
@@ -152,13 +154,17 @@
     margin: -20px auto 0px;
   }
 
+  .footer-links {
+    font-size: 18px;
+  }
+
   .footer nav ul {
     display: flex;
     justify-content: space-evenly;
   }
 
   .footer nav li {
-    padding: 15px 0px 25px 25px;
+    padding: 15px 0px 25px;
   }
 
   .footer-icons {
