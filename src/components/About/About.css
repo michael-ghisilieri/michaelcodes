@@ -207,6 +207,15 @@
 }
 
 @media (max-width: 640px) {
+  .aboutme-desc > h1 {
+    font-size: 48px;
+  }
+
+  .aboutme-desc p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
   #personal-photo {
     width: 80%;
     padding: 0 10%;
@@ -243,5 +252,22 @@
 
   .aboutme-icons {
     margin-bottom: 30px;
+  }
+
+  .aboutme-icons img {
+    height: 55px;
+  }
+  .aboutme-desc ul {
+    justify-content: space-evenly;
+  }
+
+  .aboutme-desc li { 
+    font-size: 14px;
+    margin: 0 15px;
+    padding-bottom: 25px;
+  }
+
+  .aboutme-desc span {
+    padding: 0;
   }
 }
