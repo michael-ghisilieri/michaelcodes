@@ -3,8 +3,8 @@ import ReactTooltip from 'react-tooltip'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './About.css'
 import personalPhoto from '../../images/itme.jpg'
-import github from '../../images/aboutMeIcons/github-small.png'
-import linkedin from '../../images/aboutMeIcons/linkedin-small.png'
+import github from '../../images/githubIcon.svg'
+import linkedin from '../../images/linkedinIcon.svg'
 import cssLogo from '../../images/aboutMeIcons/css.png'
 import githubLogo from '../../images/aboutMeIcons/github.png'
 import htmlLogo from '../../images/aboutMeIcons/html.png'
@@ -58,29 +58,37 @@ class About extends Component {
               getContent={() => this.state.message}
             />
             <div className="mobile-icon-margin">
-              <img className="profile-card-icons" src={github} alt="github" />
               <a
-                className="profile-card-links"
+                className="hide-decoration"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/michael-ghisilieri"
               >
-                github.com/michael-ghisilieri
+                <img
+                  className="profile-card-icons github-profile"
+                  src={github}
+                  alt="github"
+                />
+                <span className="profile-card-links">
+                  github.com/michael-ghisilieri
+                </span>
               </a>
             </div>
             <div className="mobile-icon-margin">
-              <img
-                className="profile-card-icons"
-                src={linkedin}
-                alt="linkedin"
-              />
               <a
-                className="profile-card-links"
+                className="hide-decoration"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/michael-ghisilieri/"
               >
-                linkedin.com/in/michael-ghisilieri
+                <img
+                  className="profile-card-icons linkedin-profile"
+                  src={linkedin}
+                  alt="linkedin"
+                />
+                <span className="profile-card-links">
+                  linkedin.com/in/michael-ghisilieri
+                </span>
               </a>
             </div>
           </div>
