@@ -31,7 +31,7 @@ class About extends Component {
       <div>
         <div className="aboutme-page">
           <div className="profile-card">
-            <img id="personal-photo" src={personalPhoto} alt="me" />
+            <img id="personal-photo" src={personalPhoto} alt="profile-pic" />
             <CopyToClipboard
               text="michael.ghisilieri@gmail.com"
               className="mobile-icon-margin"

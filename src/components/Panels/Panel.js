@@ -10,6 +10,7 @@ class Panel extends Component {
       text: '',
       imgPos: '',
       txtPos: '',
+      alt: '',
     }
   }
 
@@ -25,7 +26,7 @@ class Panel extends Component {
           }}
           className="panel-img"
           src={this.props.image}
-          alt="igloo"
+          alt={this.props.alt}
         />
         <div style={{ float: this.props.txtPos }} className="panel-txt">
           <strong> {this.props.title} </strong>

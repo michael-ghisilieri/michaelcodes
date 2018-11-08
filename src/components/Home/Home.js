@@ -15,7 +15,7 @@ class Home extends Component {
     return (
       <div>
         <div className="header-img-box">
-          <img className="header-img" src={codephoto} alt="orange justice" />
+          <img className="header-img" src={codephoto} alt="code-editor" />
         </div>
 
         <div className="about-home">
@@ -36,16 +36,19 @@ class Home extends Component {
             image={webpage}
             title="Web Development"
             content={textData.homeCard1}
+            alt="webpage-icon"
           />
           <Card
             image={tools}
             title="Building Things"
             content={textData.homeCard2}
+            alt="tool-icon"
           />
           <Card
             image={recordplayer}
             title="Music Is Good Too"
             content={textData.homeCard3}
+            alt="music-icon"
           />
         </div>
 
@@ -56,6 +59,7 @@ class Home extends Component {
             imgPos="left"
             txtPos="right"
             text={textData.homePanel1}
+            alt="computer-desk"
           />
           <Panel
             image={guitar}
@@ -63,6 +67,7 @@ class Home extends Component {
             imgPos="right"
             txtPos="left"
             text={textData.homePanel2}
+            alt="guitar"
           />
         </div>
       </div>
