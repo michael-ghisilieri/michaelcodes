@@ -4,14 +4,20 @@ import ReactTooltip from 'react-tooltip'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './footer.css'
 import mailIcon from './images/mailIcon.png'
-import github from './images/github32px.png'
-import linkedin from './images/linkedin34px.png'
+import githubIcon from './images/githubIconWhite.svg'
+import linkedinIcon from './images/linkedinIconWhite.svg'
 
 class Footer extends Component {
   constructor(props) {
     super(props)
     this.state = {
       message: 'Click here to copy my email address!',
+      svgColor: 'white',
+    }
+    this.svgCss = {
+      fill: 'white',
+      width: '32px',
+      height: '32px',
     }
   }
 
@@ -80,7 +86,11 @@ class Footer extends Component {
               rel="noopener noreferrer"
               href="https://github.com/michael-ghisilieri"
             >
-              <img src={github} alt="github logo" />
+              <img
+                className="footer-social"
+                src={githubIcon}
+                alt="github logo"
+              />
             </a>
 
             <a
@@ -88,7 +98,11 @@ class Footer extends Component {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/in/michael-ghisilieri/"
             >
-              <img src={linkedin} alt="linkedin logo" />
+              <img
+                className="footer-social"
+                src={linkedinIcon}
+                alt="linkedin logo"
+              />
             </a>
           </div>
         </div>

@@ -3,8 +3,8 @@ import ReactTooltip from 'react-tooltip'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './About.css'
 import personalPhoto from '../../images/itme.jpg'
-import github from '../../images/githubIcon.svg'
-import linkedin from '../../images/linkedinIcon.svg'
+import github from '../../images/aboutMeIcons/githubIconBlack.svg'
+import linkedin from '../../images/aboutMeIcons/linkedinIconBlack.svg'
 import cssLogo from '../../images/aboutMeIcons/css.png'
 import githubLogo from '../../images/aboutMeIcons/github.png'
 import htmlLogo from '../../images/aboutMeIcons/html.png'
@@ -101,13 +101,16 @@ class About extends Component {
             </p>
             <ul className="aboutme-icons">
               <li>
-                <img src={javascriptLogo} alt="javascript" />JavaScript
+                <img src={javascriptLogo} alt="javascript" />
+                JavaScript
               </li>
               <li>
-                <img src={nodejsLogo} alt="nodejs" />Node.js
+                <img src={nodejsLogo} alt="nodejs" />
+                Node.js
               </li>
               <li>
-                <img src={reactLogo} alt="react" />React
+                <img src={reactLogo} alt="react" />
+                React
               </li>
               <li>
                 <img src={htmlLogo} alt="html" />
@@ -118,7 +121,8 @@ class About extends Component {
                 <span>CSS3</span>
               </li>
               <li>
-                <img src={githubLogo} alt="github" />GitHub
+                <img src={githubLogo} alt="github" />
+                GitHub
               </li>
             </ul>
           </div>
