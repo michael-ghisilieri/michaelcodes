@@ -4,6 +4,10 @@ import textData from '../../content.json'
 import codeCollage from '../../images/codeCollage.png'
 
 class Professional extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <div className="prof-page">
