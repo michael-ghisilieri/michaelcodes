@@ -10,26 +10,27 @@ class Panel extends Component {
       text: '',
       imgPos: '',
       txtPos: '',
+      alt: '',
     }
   }
 
-  buildSublink() {
-
-  }
+  buildSublink() {}
 
   render() {
     return (
       <div className="panel-container">
         <img
-          style={{ float: this.props.imgPos,
-            order: this.props.imgPos === 'right'? '3': '1' }}
+          style={{
+            float: this.props.imgPos,
+            order: this.props.imgPos === 'right' ? '3' : '1',
+          }}
           className="panel-img"
           src={this.props.image}
-          alt="igloo"
+          alt={this.props.alt}
         />
         <div style={{ float: this.props.txtPos }} className="panel-txt">
-          <strong > {this.props.title} </strong>
-          <p dangerouslySetInnerHTML={{__html: this.props.text}} />
+          <strong> {this.props.title} </strong>
+          <p dangerouslySetInnerHTML={{ __html: this.props.text }} />
         </div>
       </div>
     )

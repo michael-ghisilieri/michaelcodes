@@ -44,6 +44,8 @@
 
 @media (max-width: 640px) {
   .error-container h1 {
+    font-size: 220px;
+    padding-right: 10px;
     margin: 15px auto;
   }
 
