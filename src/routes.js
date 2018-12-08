@@ -7,6 +7,7 @@ import Header from './header'
 import Footer from './footer'
 import Error404 from './components/Error/Error'
 import Professional from './components/Professional/Professional'
+import Personal from './components/Personal/Personal'
 import './App.css'
 
 const createRoutes = () => {
@@ -19,6 +20,7 @@ const createRoutes = () => {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/professional" component={Professional} />
+            <Route path="/personal" component={Personal} />
             <Route path="*" component={Error404} />
           </Switch>
         </div>

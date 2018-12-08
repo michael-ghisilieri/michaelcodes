@@ -5,7 +5,7 @@ class Personal extends Component {
   render() {
     return (
       <div>
-        <h2 className="segoe-font">Games</h2>
+        <h1>Personal Page</h1>
       </div>
     )
   }
