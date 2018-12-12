@@ -1,0 +1,30 @@
+.tile {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.tile-image {
+  display: block;
+  width: 100%;
+  opacity: 0.75;
+}
+
+.tile-image:hover {
+  opacity: 1.0;
+}
+
+.tile > a {
+  position: absolute;
+  margin: 0;
+  color: white;
+  text-decoration: underline;
+  font-size: 32px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
