@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Personal.css'
+import textData from '../../content.json'
 import Tile from '../Tile/Tile'
 import horror from '../../images/horrorCandles.jpg'
 import sports from '../../images/football.jpg'
@@ -16,18 +17,54 @@ class Personal extends Component {
         <Tile image={gaming} title="gaming" alt="horror-tile" />
         <div className="clr" />
 
-        <h1 id="music-section" className="monitor-font">
-          MUSIC
-        </h1>
-        <h1 id="sports-section" className="sports-font">
-          SPORTS
-        </h1>
-        <h1 id="horror-section" className="october-font">
-          HORROR
-        </h1>
-        <h1 id="gaming-section" className="arcade-font">
-          GAMING
-        </h1>
+        <div id="music-section" className="personal-section">
+          <h1 className="monitor-font">MUSIC</h1>
+          <p className="description">{textData.persHorrorDesc}</p>
+          <ul>
+            <li>The Conjuring 2</li>
+            <li>The Nightmare</li>
+            <li>Dead Silence</li>
+            <li>Trick 'r Treat</li>
+            <li>Grave Encounters</li>
+          </ul>
+        </div>
+
+        <div id="sports-section" className="personal-section">
+          <h1 className="sports-font">SPORTS</h1>
+          <p className="description">{textData.persHorrorDesc}</p>
+          <ul>
+            <li>The Conjuring 2</li>
+            <li>The Nightmare</li>
+            <li>Dead Silence</li>
+            <li>Trick 'r Treat</li>
+            <li>Grave Encounters</li>
+          </ul>
+        </div>
+
+        <div id="horror-section" className="personal-section">
+          <h1 className="october-font">HORROR</h1>
+          <p className="description">{textData.persHorrorDesc}</p>
+          <ul>
+            <li>The Conjuring 2</li>
+            <li>The Nightmare</li>
+            <li>Dead Silence</li>
+            <li>Trick 'r Treat</li>
+            <li>Grave Encounters</li>
+          </ul>
+        </div>
+
+        <div id="gaming-section" className="personal-section">
+          <h1 className="arcade-font">GAMING</h1>
+          <p className="description">{textData.persHorrorDesc}</p>
+          <ul>
+            <li>The Conjuring 2</li>
+            <li>The Nightmare</li>
+            <li>Dead Silence</li>
+            <li>Trick 'r Treat</li>
+            <li>Grave Encounters</li>
+          </ul>
+        </div>
+        <div className="clr" />
       </div>
     )
   }

@@ -5,9 +5,15 @@
   font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
 }
 
-.personal-page > h1 {
+.personal-page h1 {
   font-size: 64px;
   text-align: center;
+}
+
+.personal-section {
+  width: 40%;
+  padding: 0 5%;
+  float: left;
 }
 
 .monitor-font {
@@ -24,4 +30,9 @@
 
 .arcade-font {
   font-family: 'ArcadeClassic';
+}
+
+.personal-page .description {
+  font-size: 16px;
+  text-align: justify;
 }
