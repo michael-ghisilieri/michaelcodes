@@ -1,0 +1,27 @@
+.personal-page {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+}
+
+.personal-page > h1 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.monitor-font {
+  font-family: 'Monitor';
+}
+
+.sports-font {
+  font-family: 'Sports World';
+}
+
+.october-font {
+  font-family: 'October Crow';
+}
+
+.arcade-font {
+  font-family: 'ArcadeClassic';
+}
