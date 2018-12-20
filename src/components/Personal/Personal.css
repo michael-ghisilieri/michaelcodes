@@ -18,14 +18,22 @@
 
 .monitor-font {
   font-family: 'Monitor';
+  color: lightskyblue;
+}
+
+#current-music {
+  width: 180px;
+  float: left;
 }
 
 .sports-font {
   font-family: 'Sports World';
+  color: red;
 }
 
 .october-font {
   font-family: 'October Crow';
+  color: #EB5F22;
 }
 
 .arcade-font {
@@ -35,4 +43,8 @@
 .personal-page .description {
   font-size: 16px;
   text-align: justify;
+}
+
+.float-left {
+  float: left;
 }

@@ -6,6 +6,7 @@ import horror from '../../images/horrorCandles.jpg'
 import sports from '../../images/football.jpg'
 import music from '../../images/musicDJ.jpg'
 import gaming from '../../images/ps4Controller.jpg'
+import currentMusic from '../../images/ASOT894Cover.png'
 
 class Personal extends Component {
   render() {
@@ -19,14 +20,20 @@ class Personal extends Component {
 
         <div id="music-section" className="personal-section">
           <h1 className="monitor-font">MUSIC</h1>
-          <p className="description">{textData.persHorrorDesc}</p>
-          <ul>
-            <li>The Conjuring 2</li>
-            <li>The Nightmare</li>
-            <li>Dead Silence</li>
-            <li>Trick 'r Treat</li>
-            <li>Grave Encounters</li>
-          </ul>
+          <p className="description">{textData.persMusicDesc}</p>
+          <h4>Here's what I've had on repeat recently...</h4>
+          <p>
+            A State Of Trance Episode 894
+            <br />
+            by Armin van Buuren
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=4Xq-ROzK_Xs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img id="current-music" src={currentMusic} alt="currentMusic" />
+          </a>
         </div>
 
         <div id="sports-section" className="personal-section">
@@ -40,7 +47,7 @@ class Personal extends Component {
             <li>Grave Encounters</li>
           </ul>
         </div>
-
+        <div className="clr" />
         <div id="horror-section" className="personal-section">
           <h1 className="october-font">HORROR</h1>
           <p className="description">{textData.persHorrorDesc}</p>
