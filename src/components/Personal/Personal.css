@@ -21,9 +21,15 @@
   color: lightskyblue;
 }
 
+.music-recom {
+  width: 80%;
+  margin: 0 auto;
+}
+
 #current-music {
   width: 180px;
   float: left;
+  padding-left: 40px;
 }
 
 .sports-font {

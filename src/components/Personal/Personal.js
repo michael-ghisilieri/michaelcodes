@@ -21,19 +21,23 @@ class Personal extends Component {
         <div id="music-section" className="personal-section">
           <h1 className="monitor-font">MUSIC</h1>
           <p className="description">{textData.persMusicDesc}</p>
-          <h4>Here's what I've had on repeat recently...</h4>
-          <p>
-            A State Of Trance Episode 894
-            <br />
-            by Armin van Buuren
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=4Xq-ROzK_Xs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img id="current-music" src={currentMusic} alt="currentMusic" />
-          </a>
+          <div className="music-recom">
+            <div className="float-left">
+              <h4>Here's what I've had on repeat recently...</h4>
+              <p>
+                A State Of Trance Episode 894
+                <br />
+                by Armin van Buuren
+              </p>
+            </div>
+            <a
+              href="https://www.youtube.com/watch?v=4Xq-ROzK_Xs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img id="current-music" src={currentMusic} alt="currentMusic" />
+            </a>
+          </div>
         </div>
 
         <div id="sports-section" className="personal-section">
