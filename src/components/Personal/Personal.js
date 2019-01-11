@@ -42,14 +42,7 @@ class Personal extends Component {
 
         <div id="sports-section" className="personal-section">
           <h1 className="sports-font">SPORTS</h1>
-          <p className="description">{textData.persHorrorDesc}</p>
-          <ul>
-            <li>The Conjuring 2</li>
-            <li>The Nightmare</li>
-            <li>Dead Silence</li>
-            <li>Trick 'r Treat</li>
-            <li>Grave Encounters</li>
-          </ul>
+          <p className="description">{textData.persSportsDesc}</p>
         </div>
         <div className="clr" />
         <div id="horror-section" className="personal-section">
