@@ -1,0 +1,104 @@
+.header-img-box {
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.header-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+  margin-top: 0px;
+  box-shadow: 0px 3px 2px black;
+  margin-bottom: 50px;
+}
+
+.about-home {
+  text-align: center;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype !important;
+}
+
+.about-home h2 {
+  padding-top: 25px;
+}
+
+.about-home p {
+  max-width: 80%;
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.line-bar {
+  border-top: 3px solid black;
+  width: 15%;
+  margin: 40px auto 0px;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.panel-box {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: -100px;
+}
+
+/* --- may or may not use this extra reset on the bar ---
+@media (max-width: 1300px) { 
+  .line-bar {
+    width: 13%;
+    margin-left: 43.5%;
+  }
+}
+*/
+
+@media (max-width: 1040px) {
+  .panel-box {
+    margin-bottom: -75px;
+  }
+
+  .line-bar {
+    width: 25%;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-img {
+    width: 640px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .about-home p {
+    text-align: justify;
+  }
+  
+  .card-box {
+    width: 80%;
+  }
+
+  .panel-box {
+    margin-bottom: 0px;
+  }
+
+  .about h2 {
+    padding: 0px;
+  }
+  
+  .about p {
+    max-width: 90%;
+    margin: 30px auto;
+    font-size: 20px;
+  }
+
+  .line-bar {
+    border-top: 3px solid black;
+    width: 40%;
+    margin: 0 auto -20px;
+  }
+}

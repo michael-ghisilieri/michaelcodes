@@ -1,0 +1,56 @@
+.error-container {
+  font-family: 'Share', serif, Segoe UI, Frutiger, Frutiger Linotype;
+}
+
+.error-container h1 {
+  /* cool gradient black to gray but doesn't look as good as expected 
+  background: linear-gradient(to top right, black, #D0D0D0); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  */
+  font-size: 400px;
+  text-align: center;
+  margin: 100px auto 60px;
+}
+
+.error-container p {
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.error-container p > a {
+  color: #808080;
+}
+
+@media (max-width: 1520px) {
+  .error-container h1 {
+    margin-top: 75px; 
+  }
+}
+
+@media (max-width: 1250px) {
+  .error-container h1 {
+   margin: 55px auto 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .error-container h1 {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 640px) {
+  .error-container h1 {
+    font-size: 220px;
+    padding-right: 10px;
+    margin: 15px auto;
+  }
+
+  .error-container p {
+    margin-top: -10px;
+    padding-bottom: 40px;
+  }
+}

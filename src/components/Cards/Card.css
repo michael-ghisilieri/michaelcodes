@@ -1,0 +1,47 @@
+.card-item {
+  width: 25%;
+  font-family: 'News Cycle', serif, Segoe UI, Frutiger, Frutiger Linotype;
+  float: left;
+  margin: 0 auto;
+  padding: 50px 0px 40px 0px;
+  font-size: 16px;
+}
+
+.card-item > div {
+  text-align: left;
+}
+
+.card-item > p {
+  text-align: justify;
+}
+
+.card-item img {
+  width: 64px;
+  margin-bottom: -20px;
+}
+
+@media (max-width: 960px) {
+  .card-item {
+    width: 40%;
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-item {
+    width: 100%;
+    padding: 0px 0px 40px;
+  }
+
+  .card-item img {
+    margin-bottom: -30px;
+  }
+
+  .card-item > div {
+    text-align: center;
+  }
+
+  .card-item > strong {
+    text-align: center;
+  }
+}
