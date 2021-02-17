@@ -30,7 +30,7 @@ class Footer extends Component {
       <div className="footer">
         <div>
           <div className="footer-name">
-            <p>&copy; 2018 Michael Ghisilieri</p>
+            <p>&copy; {new Date().getFullYear()} Michael Ghisilieri</p>
             <p className="footer-credit">
               All icons on this page are credited to{' '}
               <a

@@ -89,7 +89,25 @@
 }
 
 .aboutme-icons img {
-  height: 110px;
+  height: 100px;
+}
+
+.aboutme-icons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+.aboutme-icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+  flex: 0 1 16%
 }
 
 @media (max-width: 1520px) {
@@ -111,6 +129,10 @@
 
   .aboutme-icons img {
     height: 100px;
+  }
+
+  .aboutme-icon-group {
+    flex: 0 1 33%
   }
 }
 

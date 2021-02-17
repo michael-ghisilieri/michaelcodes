@@ -8,8 +8,8 @@ import linkedin from '../../images/aboutMeIcons/linkedinIconBlack.svg'
 import cssLogo from '../../images/aboutMeIcons/css.png'
 import githubLogo from '../../images/aboutMeIcons/github.png'
 import htmlLogo from '../../images/aboutMeIcons/html.png'
-import javascriptLogo from '../../images/aboutMeIcons/javascript.png'
-import nodejsLogo from '../../images/aboutMeIcons/nodejs.png'
+import typescriptLogo from '../../images/aboutMeIcons/typescript.png'
+import angularLogo from '../../images/aboutMeIcons/angular.png'
 import reactLogo from '../../images/aboutMeIcons/react.png'
 import textData from '../../content.json'
 import mailBlack from '../../images/mailBlack.png'
@@ -103,32 +103,32 @@ class About extends Component {
             <p>
               Here are the main languages and tools that are keeping me busy!
             </p>
-            <ul className="aboutme-icons">
-              <li>
-                <img src={javascriptLogo} alt="javascript" />
-                JavaScript
-              </li>
-              <li>
-                <img src={nodejsLogo} alt="nodejs" />
-                Node.js
-              </li>
-              <li>
+            <div className="aboutme-icons">
+              <div className="aboutme-icon-group">
+                <img src={typescriptLogo} alt="typescript" />
+                <span>TypeScript</span>
+              </div>
+              <div className="aboutme-icon-group">
+                <img src={angularLogo} alt="angular" />
+                <span>Angular</span>
+              </div>
+              <div className="aboutme-icon-group">
                 <img src={reactLogo} alt="react" />
-                React
-              </li>
-              <li>
+                <span>React</span>
+              </div>
+              <div className="aboutme-icon-group">
                 <img src={htmlLogo} alt="html" />
                 <span>HTML5</span>
-              </li>
-              <li>
+              </div>
+              <div className="aboutme-icon-group">
                 <img src={cssLogo} alt="css" />
                 <span>CSS3</span>
-              </li>
-              <li>
+              </div>
+              <div className="aboutme-icon-group">
                 <img src={githubLogo} alt="github" />
-                GitHub
-              </li>
-            </ul>
+                <span>GitHub</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
