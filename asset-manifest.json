@@ -1,11 +1,10 @@
 {
-  "main.css": "static/css/main.399733b2.css",
-  "main.css.map": "static/css/main.399733b2.css.map",
-  "main.js": "static/js/main.85cc4c4b.js",
-  "main.js.map": "static/js/main.85cc4c4b.js.map",
+  "main.css": "static/css/main.bd2ddfb8.css",
+  "main.css.map": "static/css/main.bd2ddfb8.css.map",
+  "main.js": "static/js/main.e48c0c38.js",
+  "main.js.map": "static/js/main.e48c0c38.js.map",
   "static\\media\\backgroundPattern.png": "static/media/backgroundPattern.bf9ddc83.png",
   "static\\media\\code.jpg": "static/media/code.c5466e3f.jpg",
-  "static\\media\\codeCollage.png": "static/media/codeCollage.8f310808.png",
   "static\\media\\computer-desk.jpg": "static/media/computer-desk.8e9aaeb5.jpg",
   "static\\media\\css.png": "static/media/css.970b93f0.png",
   "static\\media\\githubIconBlack.svg": "static/media/githubIconBlack.207687a1.svg",
@@ -15,6 +14,5 @@
   "static\\media\\itme.jpg": "static/media/itme.a07292e9.jpg",
   "static\\media\\linkedinIconBlack.svg": "static/media/linkedinIconBlack.6753a3b6.svg",
   "static\\media\\linkedinIconWhite.svg": "static/media/linkedinIconWhite.5a638cd5.svg",
-  "static\\media\\nodejs.png": "static/media/nodejs.b91dd13e.png",
   "static\\media\\react.png": "static/media/react.595ed5b0.png"
 }
