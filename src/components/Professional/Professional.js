@@ -14,8 +14,14 @@ class Professional extends Component {
         <span className="label prof-label">EXPERIENCE</span>
         <div className="prof-section">
           <div className="half-width">
+            <h2>Axoni</h2>
+            <p className="date-margin">June 2022 &mdash; July 2023</p>
+            <p dangerouslySetInnerHTML={{ __html: textData.experienceAxoni }} />
+          </div>
+
+          <div className="half-width">
             <h2>Owned Outcomes</h2>
-            <p className="date-margin">February 2019 &mdash; Current</p>
+            <p className="date-margin">February 2019 &mdash; June 2022</p>
             <p dangerouslySetInnerHTML={{ __html: textData.experienceOwnedOutcomes }} />
           </div>
 
