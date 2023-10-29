@@ -1,29 +1,29 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import ReactTooltip from 'react-tooltip'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
-import './footer.css'
-import mailIcon from './images/mailIcon.png'
-import githubIcon from './images/githubIconWhite.svg'
-import linkedinIcon from './images/linkedinIconWhite.svg'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import ReactTooltip from 'react-tooltip';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import './footer.css';
+import mailIcon from './images/mailIcon.png';
+import githubIcon from './images/githubIconWhite.svg';
+import linkedinIcon from './images/linkedinIconWhite.svg';
 
 class Footer extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       message: 'Click here to copy my email address!',
       svgColor: 'white',
-    }
+    };
     this.svgCss = {
       fill: 'white',
       width: '32px',
       height: '32px',
-    }
+    };
   }
 
   copyEmail = () => {
-    this.setState({ message: 'My email is now copied to your clipboard!' })
-  }
+    this.setState({ message: 'My email is now copied to your clipboard!' });
+  };
 
   render() {
     return (
@@ -107,8 +107,8 @@ class Footer extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

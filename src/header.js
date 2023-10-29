@@ -1,51 +1,51 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import { Link } from 'react-router-dom'
-import ReactTooltip from 'react-tooltip'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
-import './header.css'
-import menu from './images/menuWhite.png'
-import mailIcon from './images/mailIcon.png'
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+import ReactTooltip from 'react-tooltip';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import './header.css';
+import menu from './images/menuWhite.png';
+import mailIcon from './images/mailIcon.png';
 
 class Header extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       message: 'Click here to copy my email address!',
       dropdown: 'none',
-    }
+    };
   }
 
   componentDidMount() {
-    document.addEventListener('mousedown', this.handleClick, false)
+    document.addEventListener('mousedown', this.handleClick, false);
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousedown', this.handleClick, false)
+    document.removeEventListener('mousedown', this.handleClick, false);
   }
 
   handleClick = event => {
     if (ReactDOM.findDOMNode(this).contains(event.target)) {
       // click was inside of the component
-      return
+      return;
     }
 
     // click was outside of the component
-    this.setState({ dropdown: 'none' })
-  }
+    this.setState({ dropdown: 'none' });
+  };
 
   copyEmail = () => {
-    this.setState({ message: 'My email is now copied to your clipboard!' })
-  }
+    this.setState({ message: 'My email is now copied to your clipboard!' });
+  };
 
   toggleDropdown = () => {
-    var dropdown = this.state.dropdown === 'none' ? 'block' : 'none'
-    this.setState({ dropdown: dropdown })
-  }
+    var dropdown = this.state.dropdown === 'none' ? 'block' : 'none';
+    this.setState({ dropdown: dropdown });
+  };
 
   clearDropdown = () => {
-    this.setState({ dropdown: 'none' })
-  }
+    this.setState({ dropdown: 'none' });
+  };
 
   render() {
     return (
@@ -135,8 +135,8 @@ class Header extends Component {
           </nav>
         </div>
       </header>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

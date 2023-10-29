@@ -1,13 +1,13 @@
-import React from 'react'
-import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 // import history from './history'
-import Home from './components/Home/Home'
-import About from './components/About/About'
-import Header from './header'
-import Footer from './footer'
-import Error404 from './components/Error/Error'
-import Professional from './components/Professional/Professional'
-import './App.css'
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Header from './header';
+import Footer from './footer';
+import Error404 from './components/Error/Error';
+import Professional from './components/Professional/Professional';
+import './App.css';
 
 const createRoutes = () => {
   return (
@@ -25,7 +25,7 @@ const createRoutes = () => {
         <Footer />
       </div>
     </Router>
-  )
-}
+  );
+};
 
-export default createRoutes
+export default createRoutes;

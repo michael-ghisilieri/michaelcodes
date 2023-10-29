@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import Panel from '../Panels/Panel'
-import Card from '../Cards/Card'
-import codephoto from '../../images/code.jpg'
-import webpage from '../../images/webpage.png'
-import tools from '../../images/tools.png'
-import recordplayer from '../../images/recordplayer.png'
-import computer from '../../images/computer-desk.jpg'
-import guitar from '../../images/guitar-catcher.jpg'
-import './Home.css'
-import textData from '../../content.json'
+import React, { Component } from 'react';
+import Panel from '../Panels/Panel';
+import Card from '../Cards/Card';
+import codephoto from '../../images/code.jpg';
+import webpage from '../../images/webpage.png';
+import tools from '../../images/tools.png';
+import recordplayer from '../../images/recordplayer.png';
+import computer from '../../images/computer-desk.jpg';
+import guitar from '../../images/guitar-catcher.jpg';
+import './Home.css';
+import textData from '../../content.json';
 
 class Home extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -75,8 +75,8 @@ class Home extends Component {
           />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import './Professional.css'
-import textData from '../../content.json'
+import React, { Component } from 'react';
+import './Professional.css';
+import textData from '../../content.json';
 // import codeCollage from '../../images/codeCollage.png'
 
 class Professional extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -22,13 +22,19 @@ class Professional extends Component {
           <div className="half-width">
             <h2>Owned Outcomes</h2>
             <p className="date-margin">February 2019 &mdash; June 2022</p>
-            <p dangerouslySetInnerHTML={{ __html: textData.experienceOwnedOutcomes }} />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: textData.experienceOwnedOutcomes,
+              }}
+            />
           </div>
 
           <div className="half-width">
             <h2>Undergraduate Research Assistant</h2>
             <p className="date-margin">Sept 2016 &mdash; May 2017</p>
-            <p dangerouslySetInnerHTML={{ __html: textData.experienceUndergrad }} />
+            <p
+              dangerouslySetInnerHTML={{ __html: textData.experienceUndergrad }}
+            />
           </div>
 
           <div className="clr" />
@@ -80,8 +86,8 @@ class Professional extends Component {
         </div> */}
         <div className="clr" />
       </div>
-    )
+    );
   }
 }
 
-export default Professional
+export default Professional;

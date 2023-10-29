@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import './Error.css'
+import React, { Component } from 'react';
+import './Error.css';
 
 class Error404 extends Component {
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   render() {
@@ -15,8 +15,8 @@ class Error404 extends Component {
           <a href="/">here</a> to return to home!
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default Error404
+export default Error404;

@@ -1,34 +1,34 @@
-import React, { Component } from 'react'
-import ReactTooltip from 'react-tooltip'
-import { CopyToClipboard } from 'react-copy-to-clipboard'
-import './About.css'
-import personalPhoto from '../../images/itme.jpg'
-import github from '../../images/aboutMeIcons/githubIconBlack.svg'
-import linkedin from '../../images/aboutMeIcons/linkedinIconBlack.svg'
-import cssLogo from '../../images/aboutMeIcons/css.png'
-import githubLogo from '../../images/aboutMeIcons/github.png'
-import htmlLogo from '../../images/aboutMeIcons/html.png'
-import typescriptLogo from '../../images/aboutMeIcons/typescript.png'
-import angularLogo from '../../images/aboutMeIcons/angular.png'
-import reactLogo from '../../images/aboutMeIcons/react.png'
-import textData from '../../content.json'
-import mailBlack from '../../images/mailBlack.png'
+import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import './About.css';
+import personalPhoto from '../../images/itme.jpg';
+import github from '../../images/aboutMeIcons/githubIconBlack.svg';
+import linkedin from '../../images/aboutMeIcons/linkedinIconBlack.svg';
+import cssLogo from '../../images/aboutMeIcons/css.png';
+import githubLogo from '../../images/aboutMeIcons/github.png';
+import htmlLogo from '../../images/aboutMeIcons/html.png';
+import typescriptLogo from '../../images/aboutMeIcons/typescript.png';
+import angularLogo from '../../images/aboutMeIcons/angular.png';
+import reactLogo from '../../images/aboutMeIcons/react.png';
+import textData from '../../content.json';
+import mailBlack from '../../images/mailBlack.png';
 
 class About extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       message: 'Click here to copy my email address!',
-    }
+    };
   }
 
   componentDidMount() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   }
 
   copyEmail = () => {
-    this.setState({ message: 'My email is now copied to your clipboard!' })
-  }
+    this.setState({ message: 'My email is now copied to your clipboard!' });
+  };
 
   render() {
     return (
@@ -132,8 +132,8 @@ class About extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default About
+export default About;

@@ -1,7 +1,7 @@
-import ReactDOM from 'react-dom'
-import createRoutes from './routes'
+import ReactDOM from 'react-dom';
+import createRoutes from './routes';
 // import 'bootstrap/dist/css/bootstrap.css'
 
-const routes = createRoutes()
+const routes = createRoutes();
 
-ReactDOM.render(routes, document.getElementById('root'))
+ReactDOM.render(routes, document.getElementById('root'));

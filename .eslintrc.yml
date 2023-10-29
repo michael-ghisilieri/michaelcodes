@@ -13,6 +13,6 @@ rules:
     - error
     - trailingComma: es5
       singleQuote: true
-      semi: false
+      semi: true
 
   react/prop-types: false

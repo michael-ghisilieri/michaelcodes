@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import './Panel.css'
+import React, { Component } from 'react';
+import './Panel.css';
 
 class Panel extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       image: '',
       title: '',
@@ -11,7 +11,7 @@ class Panel extends Component {
       imgPos: '',
       txtPos: '',
       alt: '',
-    }
+    };
   }
 
   buildSublink() {}
@@ -33,8 +33,8 @@ class Panel extends Component {
           <p dangerouslySetInnerHTML={{ __html: this.props.text }} />
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Panel
+export default Panel;
