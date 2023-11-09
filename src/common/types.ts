@@ -1,3 +1,5 @@
+export type DropdownType = 'block' | 'none';
+
 type FloatType = 'left' | 'right' | 'none' | 'inline-start' | 'inline-end';
 
 export interface ImageInterface {
