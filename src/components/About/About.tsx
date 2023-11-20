@@ -36,13 +36,8 @@ const About = () => {
       <div className="aboutme-page">
         <div className="profile-card">
           <img id="personal-photo" src={personalPhoto} alt="profile-pic" />
-          <CopyToClipboard
-            text="michael.ghisilieri@gmail.com"
-          >
-            <a
-              onClick={copyEmail}
-              data-tooltip-id="about-tip"
-            >
+          <CopyToClipboard text="michael.ghisilieri@gmail.com">
+            <a onClick={copyEmail} data-tooltip-id="about-tip">
               <img
                 className="profile-card-icons mobile-icon-margin"
                 id="mail-img-about"

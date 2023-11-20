@@ -11,7 +11,9 @@ import githubIcon from './images/githubIconWhite.svg';
 import linkedinIcon from './images/linkedinIconWhite.svg';
 
 const Footer = () => {
-  const [message, setMessage] = useState('Click here to copy my email address!');
+  const [message, setMessage] = useState(
+    'Click here to copy my email address!'
+  );
 
   const copyEmail = useCallback(() => {
     setMessage('My email is now copied to your clipboard!');
@@ -46,10 +48,7 @@ const Footer = () => {
 
         <div className="footer-icons">
           <CopyToClipboard text="michael.ghisilieri@gmail.com">
-            <a
-              onClick={copyEmail}
-              data-tooltip-id="footer-tip"
-            >
+            <a onClick={copyEmail} data-tooltip-id="footer-tip">
               <img id="mail-img-footer" src={mailIcon} alt="email" />
             </a>
           </CopyToClipboard>
@@ -66,11 +65,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://github.com/michael-ghisilieri"
           >
-            <img
-              className="footer-social"
-              src={githubIcon}
-              alt="github logo"
-            />
+            <img className="footer-social" src={githubIcon} alt="github logo" />
           </a>
 
           <a
@@ -88,6 +83,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

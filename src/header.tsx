@@ -12,7 +12,9 @@ import menu from './images/menuWhite.png';
 import mailIcon from './images/mailIcon.png';
 
 const Header = () => {
-  const [message, setMessage] = useState('Click here to copy my email address!');
+  const [message, setMessage] = useState(
+    'Click here to copy my email address!'
+  );
 
   const [dropdown, setDropdown] = useState<DropdownType>('none');
 
@@ -23,11 +25,11 @@ const Header = () => {
 
     return () => {
       document.removeEventListener('mousedown', handleClick, false);
-    }
+    };
   }, []);
 
-  const handleClick = useCallback((event: any) => {
-    if (aboutRef?.current?.contains(event.target)) {
+  const handleClick = useCallback((event: MouseEvent) => {
+    if (aboutRef?.current?.contains(event.target as Node)) {
       // click was inside of the component
       return;
     }
@@ -59,12 +61,7 @@ const Header = () => {
         </h3>
 
         <div className="menu-width">
-          <img
-            id="menu-img"
-            src={menu}
-            alt="menu"
-            onClick={toggleDropdown}
-          />
+          <img id="menu-img" src={menu} alt="menu" onClick={toggleDropdown} />
         </div>
         <div className="dropdown" style={{ display: dropdown }}>
           <ul>
@@ -116,9 +113,7 @@ const Header = () => {
               </Link>
             </li>
             <CopyToClipboard text="michael.ghisilieri@gmail.com">
-              <li
-                data-tooltip-id="header-tip"
-              >
+              <li data-tooltip-id="header-tip">
                 <a onClick={copyEmail}>
                   <img id="mail-img-header" src={mailIcon} alt="email" />
                 </a>
@@ -135,6 +130,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
