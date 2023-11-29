@@ -12,7 +12,7 @@ const Professional = () => {
 
   return (
     <div className="prof-page">
-      <span className="label prof-label">EXPERIENCE TESTERONI</span>
+      <span className="label prof-label">EXPERIENCE</span>
       <div className="prof-section">
         <div className="half-width">
           <h2>Axoni</h2>
