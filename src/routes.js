@@ -1,30 +1,31 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-// import history from './history'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Header from './header';
 import Footer from './footer';
 import Error404 from './components/Error/Error';
 import Professional from './components/Professional/Professional';
+
 import './App.css';
 
 const createRoutes = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="page-container">
         <Header />
         <div className="body-container">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/professional" component={Professional} />
-            <Route path="*" component={Error404} />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/professional" element={<Professional />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
         </div>
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 
