@@ -1,18 +1,25 @@
 {
-  "main.css": "static/css/main.bd2ddfb8.css",
-  "main.css.map": "static/css/main.bd2ddfb8.css.map",
-  "main.js": "static/js/main.f17526af.js",
-  "main.js.map": "static/js/main.f17526af.js.map",
-  "static\\media\\backgroundPattern.png": "static/media/backgroundPattern.bf9ddc83.png",
-  "static\\media\\code.jpg": "static/media/code.c5466e3f.jpg",
-  "static\\media\\computer-desk.jpg": "static/media/computer-desk.8e9aaeb5.jpg",
-  "static\\media\\css.png": "static/media/css.970b93f0.png",
-  "static\\media\\githubIconBlack.svg": "static/media/githubIconBlack.207687a1.svg",
-  "static\\media\\githubIconWhite.svg": "static/media/githubIconWhite.cf70a78e.svg",
-  "static\\media\\guitar-catcher.jpg": "static/media/guitar-catcher.a53ca43c.jpg",
-  "static\\media\\html.png": "static/media/html.ce455f4e.png",
-  "static\\media\\itme.jpg": "static/media/itme.a07292e9.jpg",
-  "static\\media\\linkedinIconBlack.svg": "static/media/linkedinIconBlack.6753a3b6.svg",
-  "static\\media\\linkedinIconWhite.svg": "static/media/linkedinIconWhite.5a638cd5.svg",
-  "static\\media\\react.png": "static/media/react.595ed5b0.png"
+  "files": {
+    "main.css": "/static/css/main.c32267ca.css",
+    "main.js": "/static/js/main.c0c3ba5c.js",
+    "static/media/computer-desk.jpg": "/static/media/computer-desk.4cb1842de38c7ee76017.jpg",
+    "static/media/guitar-catcher.jpg": "/static/media/guitar-catcher.7b13006dd529e5c6a56e.jpg",
+    "static/media/code.jpg": "/static/media/code.0eaa86d7c070a71f167b.jpg",
+    "static/media/itme.jpg": "/static/media/itme.da407aa08f9e5c0884c0.jpg",
+    "static/media/backgroundPattern.png": "/static/media/backgroundPattern.5a38ec0dbfd0ee87fcac.png",
+    "static/media/react.png": "/static/media/react.46492b2192217578c519.png",
+    "static/media/html.png": "/static/media/html.8bf038547a15d04e0549.png",
+    "static/media/css.png": "/static/media/css.286a9900f844f7c0ed5f.png",
+    "static/media/githubIconWhite.svg": "/static/media/githubIconWhite.00b67ed143000c630918f0ac4206fd76.svg",
+    "static/media/githubIconBlack.svg": "/static/media/githubIconBlack.468c3582badebba006a1906b771a6906.svg",
+    "static/media/linkedinIconWhite.svg": "/static/media/linkedinIconWhite.6b77ca7e5732c9657ae1ae76e50d12dc.svg",
+    "static/media/linkedinIconBlack.svg": "/static/media/linkedinIconBlack.fda357ae087ade782e61d71821061759.svg",
+    "index.html": "/index.html",
+    "main.c32267ca.css.map": "/static/css/main.c32267ca.css.map",
+    "main.c0c3ba5c.js.map": "/static/js/main.c0c3ba5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c32267ca.css",
+    "static/js/main.c0c3ba5c.js"
+  ]
 }
