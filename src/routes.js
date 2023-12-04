@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Header from './header';
-import Footer from './footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Error404 from './components/Error/Error';
 import Professional from './components/Professional/Professional';
 

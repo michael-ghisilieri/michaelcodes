@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import './footer.css';
+import './Footer.css';
 
-import mailIcon from './images/mailIcon.png';
-import githubIcon from './images/githubIconWhite.svg';
-import linkedinIcon from './images/linkedinIconWhite.svg';
+import mailIcon from '../../images/mailIcon.png';
+import githubIcon from '../../images/githubIconWhite.svg';
+import linkedinIcon from '../../images/linkedinIconWhite.svg';
 
 const Footer = () => {
   const [message, setMessage] = useState(

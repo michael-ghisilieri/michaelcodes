@@ -16,7 +16,7 @@ import angularLogo from '../../images/aboutMeIcons/angular.png';
 import reactLogo from '../../images/aboutMeIcons/react.png';
 import mailBlack from '../../images/mailBlack.png';
 
-import textData from '../../content.json';
+import textData from '../../common/content.json';
 
 const About = () => {
   const [message, setMessage] = useState(

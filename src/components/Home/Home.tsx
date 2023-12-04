@@ -11,7 +11,7 @@ import recordplayer from '../../images/recordplayer.png';
 import computer from '../../images/computer-desk.jpg';
 import guitar from '../../images/guitar-catcher.jpg';
 
-import textData from '../../content.json';
+import textData from '../../common/content.json';
 
 const Home = () => {
   useEffect(() => {

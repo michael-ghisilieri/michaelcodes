@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import './Professional.css';
 
-import textData from '../../content.json';
+import textData from '../../common/content.json';
 // import codeCollage from '../../images/codeCollage.png'
 
 const Professional = () => {

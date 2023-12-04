@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { Tooltip } from 'react-tooltip';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-import { DropdownType } from './common/types';
+import { DropdownType } from '../../common/types';
 
-import './header.css';
+import './Header.css';
 
-import menu from './images/menuWhite.png';
-import mailIcon from './images/mailIcon.png';
+import menu from '../../images/menuWhite.png';
+import mailIcon from '../../images/mailIcon.png';
 
 const Header = () => {
   const [message, setMessage] = useState(
