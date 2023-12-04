@@ -1,11 +1,14 @@
 extends:
   - standard
   - standard-react
+  - eslint:recommended
+  - plugin:@typescript-eslint/recommended
   - prettier
 
-parser: babel-eslint
+parser: '@typescript-eslint/parser'
 
 plugins:
+  - '@typescript-eslint'
   - prettier
 
 rules:
@@ -13,6 +16,8 @@ rules:
     - error
     - trailingComma: es5
       singleQuote: true
-      semi: false
+      semi: true
+      tabWidth: 2
+      endOfLine: auto
 
-  react/prop-types: false
+  react/prop-types: 0
